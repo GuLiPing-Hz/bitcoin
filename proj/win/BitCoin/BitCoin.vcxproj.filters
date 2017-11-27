@@ -103,6 +103,12 @@
     <Filter Include="wallet\test">
       <UniqueIdentifier>{8cadcf69-0d07-4d2c-96da-cf01dc2853f3}</UniqueIdentifier>
     </Filter>
+    <Filter Include="univalue\include">
+      <UniqueIdentifier>{e7e089e1-7660-4d5a-87ac-f1bbd8fbc94d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="univalue\lib">
+      <UniqueIdentifier>{e3fc1f82-8821-4245-ac44-167d4c7389de}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\..\src\bench\coin_selection.cpp">
@@ -729,6 +735,18 @@
     <ClCompile Include="..\..\..\src\zmq\zmqabstractnotifier.cpp">
       <Filter>zmq</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\..\src\univalue\lib\univalue_read.cpp">
+      <Filter>univalue\lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\univalue\lib\univalue_write.cpp">
+      <Filter>univalue\lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\univalue\lib\univalue.cpp">
+      <Filter>univalue\lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\univalue\lib\univalue_get.cpp">
+      <Filter>univalue\lib</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\..\src\bench\perf.h">
@@ -1087,6 +1105,15 @@
     </ClInclude>
     <ClInclude Include="..\..\..\src\zmq\zmqconfig.h">
       <Filter>zmq</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\univalue\include\univalue.h">
+      <Filter>univalue\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\univalue\lib\univalue_utffilter.h">
+      <Filter>univalue\lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\univalue\lib\univalue_escapes.h">
+      <Filter>univalue\lib</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

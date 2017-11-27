@@ -53,6 +53,7 @@
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\..\..\src;$(SolutionDir)..\..\..\src\leveldb\include;$(SolutionDir)..\..\..\src\leveldb;$(SolutionDir)..\..\..\src\univalue\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -101,9 +102,13 @@
     <ClCompile Include="..\..\..\src\consensus\tx_verify.cpp" />
     <ClCompile Include="..\..\..\src\crypto\aes.cpp" />
     <ClCompile Include="..\..\..\src\crypto\chacha20.cpp" />
-    <ClCompile Include="..\..\..\src\crypto\ctaes\bench.c" />
+    <ClCompile Include="..\..\..\src\crypto\ctaes\bench.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
     <ClCompile Include="..\..\..\src\crypto\ctaes\ctaes.c" />
-    <ClCompile Include="..\..\..\src\crypto\ctaes\test.c" />
+    <ClCompile Include="..\..\..\src\crypto\ctaes\test.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
     <ClCompile Include="..\..\..\src\crypto\hmac_sha256.cpp" />
     <ClCompile Include="..\..\..\src\crypto\hmac_sha512.cpp" />
     <ClCompile Include="..\..\..\src\crypto\ripemd160.cpp" />
@@ -111,7 +116,9 @@
     <ClCompile Include="..\..\..\src\crypto\sha256.cpp" />
     <ClCompile Include="..\..\..\src\crypto\sha256_sse4.cpp" />
     <ClCompile Include="..\..\..\src\crypto\sha512.cpp" />
-    <ClCompile Include="..\..\..\src\leveldb\db\autocompact_test.cc" />
+    <ClCompile Include="..\..\..\src\leveldb\db\autocompact_test.cc">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
     <ClCompile Include="..\..\..\src\leveldb\db\builder.cc" />
     <ClCompile Include="..\..\..\src\leveldb\db\c.cc" />
     <ClCompile Include="..\..\..\src\leveldb\db\corruption_test.cc" />
@@ -269,6 +276,10 @@
     <ClCompile Include="..\..\..\src\test\univalue_tests.cpp" />
     <ClCompile Include="..\..\..\src\test\util_tests.cpp" />
     <ClCompile Include="..\..\..\src\test\versionbits_tests.cpp" />
+    <ClCompile Include="..\..\..\src\univalue\lib\univalue.cpp" />
+    <ClCompile Include="..\..\..\src\univalue\lib\univalue_get.cpp" />
+    <ClCompile Include="..\..\..\src\univalue\lib\univalue_read.cpp" />
+    <ClCompile Include="..\..\..\src\univalue\lib\univalue_write.cpp" />
     <ClCompile Include="..\..\..\src\wallet\crypter.cpp" />
     <ClCompile Include="..\..\..\src\wallet\db.cpp" />
     <ClCompile Include="..\..\..\src\wallet\feebumper.cpp" />
@@ -392,6 +403,9 @@
     <ClInclude Include="..\..\..\src\support\lockedpool.h" />
     <ClInclude Include="..\..\..\src\test\scriptnum10.h" />
     <ClInclude Include="..\..\..\src\test\test_bitcoin.h" />
+    <ClInclude Include="..\..\..\src\univalue\include\univalue.h" />
+    <ClInclude Include="..\..\..\src\univalue\lib\univalue_escapes.h" />
+    <ClInclude Include="..\..\..\src\univalue\lib\univalue_utffilter.h" />
     <ClInclude Include="..\..\..\src\wallet\coincontrol.h" />
     <ClInclude Include="..\..\..\src\wallet\crypter.h" />
     <ClInclude Include="..\..\..\src\wallet\db.h" />
