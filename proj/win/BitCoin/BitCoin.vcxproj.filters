@@ -747,6 +747,327 @@
     <ClCompile Include="..\..\..\src\univalue\lib\univalue_get.cpp">
       <Filter>univalue\lib</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\..\src\qt\transactionview.cpp">
+      <Filter>qt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\qt\utilitydialog.cpp">
+      <Filter>qt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\qt\walletframe.cpp">
+      <Filter>qt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\qt\walletmodel.cpp">
+      <Filter>qt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\qt\walletmodeltransaction.cpp">
+      <Filter>qt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\qt\walletview.cpp">
+      <Filter>qt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\qt\winshutdownmonitor.cpp">
+      <Filter>qt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\qt\addressbookpage.cpp">
+      <Filter>qt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\qt\addresstablemodel.cpp">
+      <Filter>qt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\qt\askpassphrasedialog.cpp">
+      <Filter>qt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\qt\bantablemodel.cpp">
+      <Filter>qt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\qt\bitcoin.cpp">
+      <Filter>qt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\qt\bitcoinaddressvalidator.cpp">
+      <Filter>qt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\qt\bitcoinamountfield.cpp">
+      <Filter>qt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\qt\bitcoingui.cpp">
+      <Filter>qt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\qt\bitcoinstrings.cpp">
+      <Filter>qt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\qt\bitcoinunits.cpp">
+      <Filter>qt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\qt\clientmodel.cpp">
+      <Filter>qt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\qt\coincontroldialog.cpp">
+      <Filter>qt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\qt\coincontroltreewidget.cpp">
+      <Filter>qt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\qt\csvmodelwriter.cpp">
+      <Filter>qt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\qt\editaddressdialog.cpp">
+      <Filter>qt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\qt\guiutil.cpp">
+      <Filter>qt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\qt\intro.cpp">
+      <Filter>qt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\qt\modaloverlay.cpp">
+      <Filter>qt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\qt\networkstyle.cpp">
+      <Filter>qt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\qt\notificator.cpp">
+      <Filter>qt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\qt\openuridialog.cpp">
+      <Filter>qt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\qt\optionsdialog.cpp">
+      <Filter>qt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\qt\optionsmodel.cpp">
+      <Filter>qt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\qt\overviewpage.cpp">
+      <Filter>qt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\qt\paymentrequestplus.cpp">
+      <Filter>qt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\qt\paymentserver.cpp">
+      <Filter>qt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\qt\peertablemodel.cpp">
+      <Filter>qt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\qt\platformstyle.cpp">
+      <Filter>qt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\qt\qvalidatedlineedit.cpp">
+      <Filter>qt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\qt\qvaluecombobox.cpp">
+      <Filter>qt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\qt\receivecoinsdialog.cpp">
+      <Filter>qt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\qt\receiverequestdialog.cpp">
+      <Filter>qt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\qt\recentrequeststablemodel.cpp">
+      <Filter>qt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\qt\rpcconsole.cpp">
+      <Filter>qt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\qt\sendcoinsdialog.cpp">
+      <Filter>qt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\qt\sendcoinsentry.cpp">
+      <Filter>qt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\qt\signverifymessagedialog.cpp">
+      <Filter>qt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\qt\splashscreen.cpp">
+      <Filter>qt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\qt\trafficgraphwidget.cpp">
+      <Filter>qt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\qt\transactiondesc.cpp">
+      <Filter>qt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\qt\transactiondescdialog.cpp">
+      <Filter>qt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\qt\transactionfilterproxy.cpp">
+      <Filter>qt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\qt\transactionrecord.cpp">
+      <Filter>qt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\qt\transactiontablemodel.cpp">
+      <Filter>qt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\base58.cpp">
+      <Filter>zz</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\bech32.cpp">
+      <Filter>zz</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\bitcoin-cli.cpp">
+      <Filter>zz</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\bitcoind.cpp">
+      <Filter>zz</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\bitcoin-tx.cpp">
+      <Filter>zz</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\blockencodings.cpp">
+      <Filter>zz</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\bloom.cpp">
+      <Filter>zz</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\chain.cpp">
+      <Filter>zz</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\chainparams.cpp">
+      <Filter>zz</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\chainparamsbase.cpp">
+      <Filter>zz</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\checkpoints.cpp">
+      <Filter>zz</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\clientversion.cpp">
+      <Filter>zz</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\coins.cpp">
+      <Filter>zz</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\compressor.cpp">
+      <Filter>zz</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\core_read.cpp">
+      <Filter>zz</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\core_write.cpp">
+      <Filter>zz</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\dbwrapper.cpp">
+      <Filter>zz</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\fs.cpp">
+      <Filter>zz</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\hash.cpp">
+      <Filter>zz</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\httprpc.cpp">
+      <Filter>zz</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\httpserver.cpp">
+      <Filter>zz</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\init.cpp">
+      <Filter>zz</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\key.cpp">
+      <Filter>zz</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\keystore.cpp">
+      <Filter>zz</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\merkleblock.cpp">
+      <Filter>zz</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\miner.cpp">
+      <Filter>zz</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\net.cpp">
+      <Filter>zz</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\net_processing.cpp">
+      <Filter>zz</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\netaddress.cpp">
+      <Filter>zz</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\netbase.cpp">
+      <Filter>zz</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\noui.cpp">
+      <Filter>zz</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\pow.cpp">
+      <Filter>zz</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\protocol.cpp">
+      <Filter>zz</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\pubkey.cpp">
+      <Filter>zz</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\random.cpp">
+      <Filter>zz</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\rest.cpp">
+      <Filter>zz</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\scheduler.cpp">
+      <Filter>zz</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\sync.cpp">
+      <Filter>zz</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\threadinterrupt.cpp">
+      <Filter>zz</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\timedata.cpp">
+      <Filter>zz</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\torcontrol.cpp">
+      <Filter>zz</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\txdb.cpp">
+      <Filter>zz</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\txmempool.cpp">
+      <Filter>zz</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\ui_interface.cpp">
+      <Filter>zz</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\uint256.cpp">
+      <Filter>zz</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\util.cpp">
+      <Filter>zz</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\utilmoneystr.cpp">
+      <Filter>zz</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\utilstrencodings.cpp">
+      <Filter>zz</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\utiltime.cpp">
+      <Filter>zz</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\validation.cpp">
+      <Filter>zz</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\validationinterface.cpp">
+      <Filter>zz</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\versionbits.cpp">
+      <Filter>zz</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\warnings.cpp">
+      <Filter>zz</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\addrdb.cpp">
+      <Filter>zz</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\addrman.cpp">
+      <Filter>zz</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\arith_uint256.cpp">
+      <Filter>zz</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\..\src\bench\perf.h">
@@ -1115,6 +1436,375 @@
     <ClInclude Include="..\..\..\src\univalue\lib\univalue_escapes.h">
       <Filter>univalue\lib</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\..\src\qt\transactionview.h">
+      <Filter>qt</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\qt\utilitydialog.h">
+      <Filter>qt</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\qt\walletframe.h">
+      <Filter>qt</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\qt\walletmodel.h">
+      <Filter>qt</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\qt\walletmodeltransaction.h">
+      <Filter>qt</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\qt\walletview.h">
+      <Filter>qt</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\qt\winshutdownmonitor.h">
+      <Filter>qt</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\qt\addressbookpage.h">
+      <Filter>qt</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\qt\addresstablemodel.h">
+      <Filter>qt</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\qt\askpassphrasedialog.h">
+      <Filter>qt</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\qt\bantablemodel.h">
+      <Filter>qt</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\qt\bitcoinaddressvalidator.h">
+      <Filter>qt</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\qt\bitcoinamountfield.h">
+      <Filter>qt</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\qt\bitcoingui.h">
+      <Filter>qt</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\qt\bitcoinunits.h">
+      <Filter>qt</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\qt\callback.h">
+      <Filter>qt</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\qt\clientmodel.h">
+      <Filter>qt</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\qt\coincontroldialog.h">
+      <Filter>qt</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\qt\coincontroltreewidget.h">
+      <Filter>qt</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\qt\csvmodelwriter.h">
+      <Filter>qt</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\qt\editaddressdialog.h">
+      <Filter>qt</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\qt\guiconstants.h">
+      <Filter>qt</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\qt\guiutil.h">
+      <Filter>qt</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\qt\intro.h">
+      <Filter>qt</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\qt\macdockiconhandler.h">
+      <Filter>qt</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\qt\macnotificationhandler.h">
+      <Filter>qt</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\qt\modaloverlay.h">
+      <Filter>qt</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\qt\networkstyle.h">
+      <Filter>qt</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\qt\notificator.h">
+      <Filter>qt</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\qt\openuridialog.h">
+      <Filter>qt</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\qt\optionsdialog.h">
+      <Filter>qt</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\qt\optionsmodel.h">
+      <Filter>qt</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\qt\overviewpage.h">
+      <Filter>qt</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\qt\paymentrequestplus.h">
+      <Filter>qt</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\qt\paymentserver.h">
+      <Filter>qt</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\qt\peertablemodel.h">
+      <Filter>qt</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\qt\platformstyle.h">
+      <Filter>qt</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\qt\qvalidatedlineedit.h">
+      <Filter>qt</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\qt\qvaluecombobox.h">
+      <Filter>qt</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\qt\receivecoinsdialog.h">
+      <Filter>qt</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\qt\receiverequestdialog.h">
+      <Filter>qt</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\qt\recentrequeststablemodel.h">
+      <Filter>qt</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\qt\rpcconsole.h">
+      <Filter>qt</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\qt\sendcoinsdialog.h">
+      <Filter>qt</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\qt\sendcoinsentry.h">
+      <Filter>qt</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\qt\signverifymessagedialog.h">
+      <Filter>qt</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\qt\splashscreen.h">
+      <Filter>qt</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\qt\trafficgraphwidget.h">
+      <Filter>qt</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\qt\transactiondesc.h">
+      <Filter>qt</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\qt\transactiondescdialog.h">
+      <Filter>qt</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\qt\transactionfilterproxy.h">
+      <Filter>qt</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\qt\transactionrecord.h">
+      <Filter>qt</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\qt\transactiontablemodel.h">
+      <Filter>qt</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\base58.h">
+      <Filter>zz</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\bech32.h">
+      <Filter>zz</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\blockencodings.h">
+      <Filter>zz</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\bloom.h">
+      <Filter>zz</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\chain.h">
+      <Filter>zz</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\chainparams.h">
+      <Filter>zz</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\chainparamsbase.h">
+      <Filter>zz</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\chainparamsseeds.h">
+      <Filter>zz</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\checkpoints.h">
+      <Filter>zz</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\checkqueue.h">
+      <Filter>zz</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\clientversion.h">
+      <Filter>zz</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\coins.h">
+      <Filter>zz</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\compat.h">
+      <Filter>zz</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\compressor.h">
+      <Filter>zz</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\core_io.h">
+      <Filter>zz</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\core_memusage.h">
+      <Filter>zz</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\cuckoocache.h">
+      <Filter>zz</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\dbwrapper.h">
+      <Filter>zz</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\fs.h">
+      <Filter>zz</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\hash.h">
+      <Filter>zz</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\httprpc.h">
+      <Filter>zz</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\httpserver.h">
+      <Filter>zz</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\indirectmap.h">
+      <Filter>zz</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\init.h">
+      <Filter>zz</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\key.h">
+      <Filter>zz</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\keystore.h">
+      <Filter>zz</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\limitedmap.h">
+      <Filter>zz</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\memusage.h">
+      <Filter>zz</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\merkleblock.h">
+      <Filter>zz</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\miner.h">
+      <Filter>zz</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\net.h">
+      <Filter>zz</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\net_processing.h">
+      <Filter>zz</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\netaddress.h">
+      <Filter>zz</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\netbase.h">
+      <Filter>zz</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\netmessagemaker.h">
+      <Filter>zz</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\noui.h">
+      <Filter>zz</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\pow.h">
+      <Filter>zz</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\prevector.h">
+      <Filter>zz</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\protocol.h">
+      <Filter>zz</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\pubkey.h">
+      <Filter>zz</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\random.h">
+      <Filter>zz</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\reverse_iterator.h">
+      <Filter>zz</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\reverselock.h">
+      <Filter>zz</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\scheduler.h">
+      <Filter>zz</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\serialize.h">
+      <Filter>zz</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\streams.h">
+      <Filter>zz</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\sync.h">
+      <Filter>zz</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\threadinterrupt.h">
+      <Filter>zz</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\threadsafety.h">
+      <Filter>zz</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\timedata.h">
+      <Filter>zz</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\tinyformat.h">
+      <Filter>zz</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\torcontrol.h">
+      <Filter>zz</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\txdb.h">
+      <Filter>zz</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\txmempool.h">
+      <Filter>zz</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\ui_interface.h">
+      <Filter>zz</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\uint256.h">
+      <Filter>zz</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\undo.h">
+      <Filter>zz</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\util.h">
+      <Filter>zz</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\utilmoneystr.h">
+      <Filter>zz</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\utilstrencodings.h">
+      <Filter>zz</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\utiltime.h">
+      <Filter>zz</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\validation.h">
+      <Filter>zz</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\validationinterface.h">
+      <Filter>zz</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\version.h">
+      <Filter>zz</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\versionbits.h">
+      <Filter>zz</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\warnings.h">
+      <Filter>zz</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\addrdb.h">
+      <Filter>zz</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\addrman.h">
+      <Filter>zz</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\amount.h">
+      <Filter>zz</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\arith_uint256.h">
+      <Filter>zz</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="..\..\..\src\test\Makefile">
@@ -1122,6 +1812,9 @@
     </None>
     <None Include="..\..\..\src\test\README.md">
       <Filter>test</Filter>
+    </None>
+    <None Include="..\..\..\src\qt\paymentrequest.proto">
+      <Filter>qt</Filter>
     </None>
   </ItemGroup>
 </Project>
