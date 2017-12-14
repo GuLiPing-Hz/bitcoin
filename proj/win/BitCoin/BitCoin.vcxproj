@@ -53,7 +53,7 @@
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <SDLCheck>true</SDLCheck>
-      <AdditionalIncludeDirectories>$(SolutionDir)..\..\..\src;$(SolutionDir)..\..\..\src\leveldb\include;$(SolutionDir)..\..\..\src\leveldb;$(SolutionDir)..\..\..\src\univalue\include;$(DEV_SDK_DIR)boost_1_65_1;$(DEV_SDK_DIR)BerkeleyDB\include;$(DEV_SDK_DIR)Libevent;$(DEV_SDK_DIR)OpenSSL\include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\..\..\src;$(SolutionDir)..\..\..\src\leveldb\include;$(SolutionDir)..\..\..\src\leveldb;$(SolutionDir)..\..\..\src\secp256k1\include;$(SolutionDir)..\..\..\src\univalue\include;$(DEV_SDK_DIR)boost_1_65_1;$(DEV_SDK_DIR)BerkeleyDB\include;$(DEV_SDK_DIR)Libevent;$(DEV_SDK_DIR)OpenSSL\include</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -255,68 +255,192 @@
     <ClCompile Include="..\..\..\src\support\cleanse.cpp" />
     <ClCompile Include="..\..\..\src\support\lockedpool.cpp" />
     <ClCompile Include="..\..\..\src\sync.cpp" />
-    <ClCompile Include="..\..\..\src\test\addrman_tests.cpp" />
-    <ClCompile Include="..\..\..\src\test\allocator_tests.cpp" />
-    <ClCompile Include="..\..\..\src\test\amount_tests.cpp" />
-    <ClCompile Include="..\..\..\src\test\arith_uint256_tests.cpp" />
-    <ClCompile Include="..\..\..\src\test\base32_tests.cpp" />
-    <ClCompile Include="..\..\..\src\test\base58_tests.cpp" />
-    <ClCompile Include="..\..\..\src\test\base64_tests.cpp" />
-    <ClCompile Include="..\..\..\src\test\bech32_tests.cpp" />
-    <ClCompile Include="..\..\..\src\test\bip32_tests.cpp" />
-    <ClCompile Include="..\..\..\src\test\blockencodings_tests.cpp" />
-    <ClCompile Include="..\..\..\src\test\bloom_tests.cpp" />
-    <ClCompile Include="..\..\..\src\test\bswap_tests.cpp" />
-    <ClCompile Include="..\..\..\src\test\checkqueue_tests.cpp" />
-    <ClCompile Include="..\..\..\src\test\coins_tests.cpp" />
-    <ClCompile Include="..\..\..\src\test\compress_tests.cpp" />
-    <ClCompile Include="..\..\..\src\test\crypto_tests.cpp" />
-    <ClCompile Include="..\..\..\src\test\cuckoocache_tests.cpp" />
-    <ClCompile Include="..\..\..\src\test\dbwrapper_tests.cpp" />
-    <ClCompile Include="..\..\..\src\test\DoS_tests.cpp" />
-    <ClCompile Include="..\..\..\src\test\getarg_tests.cpp" />
-    <ClCompile Include="..\..\..\src\test\hash_tests.cpp" />
-    <ClCompile Include="..\..\..\src\test\key_tests.cpp" />
-    <ClCompile Include="..\..\..\src\test\limitedmap_tests.cpp" />
-    <ClCompile Include="..\..\..\src\test\main_tests.cpp" />
-    <ClCompile Include="..\..\..\src\test\mempool_tests.cpp" />
-    <ClCompile Include="..\..\..\src\test\merkleblock_tests.cpp" />
-    <ClCompile Include="..\..\..\src\test\merkle_tests.cpp" />
-    <ClCompile Include="..\..\..\src\test\miner_tests.cpp" />
-    <ClCompile Include="..\..\..\src\test\multisig_tests.cpp" />
-    <ClCompile Include="..\..\..\src\test\netbase_tests.cpp" />
-    <ClCompile Include="..\..\..\src\test\net_tests.cpp" />
-    <ClCompile Include="..\..\..\src\test\pmt_tests.cpp" />
-    <ClCompile Include="..\..\..\src\test\policyestimator_tests.cpp" />
-    <ClCompile Include="..\..\..\src\test\pow_tests.cpp" />
-    <ClCompile Include="..\..\..\src\test\prevector_tests.cpp" />
-    <ClCompile Include="..\..\..\src\test\raii_event_tests.cpp" />
-    <ClCompile Include="..\..\..\src\test\random_tests.cpp" />
-    <ClCompile Include="..\..\..\src\test\reverselock_tests.cpp" />
-    <ClCompile Include="..\..\..\src\test\rpc_tests.cpp" />
-    <ClCompile Include="..\..\..\src\test\sanity_tests.cpp" />
-    <ClCompile Include="..\..\..\src\test\scheduler_tests.cpp" />
-    <ClCompile Include="..\..\..\src\test\scriptnum_tests.cpp" />
-    <ClCompile Include="..\..\..\src\test\script_P2SH_tests.cpp" />
-    <ClCompile Include="..\..\..\src\test\script_standard_tests.cpp" />
-    <ClCompile Include="..\..\..\src\test\script_tests.cpp" />
-    <ClCompile Include="..\..\..\src\test\serialize_tests.cpp" />
-    <ClCompile Include="..\..\..\src\test\sighash_tests.cpp" />
-    <ClCompile Include="..\..\..\src\test\sigopcount_tests.cpp" />
-    <ClCompile Include="..\..\..\src\test\skiplist_tests.cpp" />
-    <ClCompile Include="..\..\..\src\test\streams_tests.cpp" />
-    <ClCompile Include="..\..\..\src\test\test_bitcoin.cpp" />
-    <ClCompile Include="..\..\..\src\test\test_bitcoin_fuzzy.cpp" />
-    <ClCompile Include="..\..\..\src\test\test_bitcoin_main.cpp" />
-    <ClCompile Include="..\..\..\src\test\timedata_tests.cpp" />
-    <ClCompile Include="..\..\..\src\test\torcontrol_tests.cpp" />
-    <ClCompile Include="..\..\..\src\test\transaction_tests.cpp" />
-    <ClCompile Include="..\..\..\src\test\txvalidationcache_tests.cpp" />
-    <ClCompile Include="..\..\..\src\test\txvalidation_tests.cpp" />
-    <ClCompile Include="..\..\..\src\test\uint256_tests.cpp" />
-    <ClCompile Include="..\..\..\src\test\univalue_tests.cpp" />
-    <ClCompile Include="..\..\..\src\test\util_tests.cpp" />
-    <ClCompile Include="..\..\..\src\test\versionbits_tests.cpp" />
+    <ClCompile Include="..\..\..\src\test\addrman_tests.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\test\allocator_tests.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\test\amount_tests.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\test\arith_uint256_tests.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\test\base32_tests.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\test\base58_tests.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\test\base64_tests.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\test\bech32_tests.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\test\bip32_tests.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\test\blockencodings_tests.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\test\bloom_tests.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\test\bswap_tests.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\test\checkqueue_tests.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\test\coins_tests.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\test\compress_tests.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\test\crypto_tests.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\test\cuckoocache_tests.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\test\dbwrapper_tests.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\test\DoS_tests.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\test\getarg_tests.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\test\hash_tests.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\test\key_tests.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\test\limitedmap_tests.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\test\main_tests.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\test\mempool_tests.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\test\merkleblock_tests.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\test\merkle_tests.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\test\miner_tests.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\test\multisig_tests.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\test\netbase_tests.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\test\net_tests.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\test\pmt_tests.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\test\policyestimator_tests.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\test\pow_tests.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\test\prevector_tests.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\test\raii_event_tests.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\test\random_tests.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\test\reverselock_tests.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\test\rpc_tests.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\test\sanity_tests.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\test\scheduler_tests.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\test\scriptnum_tests.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\test\script_P2SH_tests.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\test\script_standard_tests.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\test\script_tests.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\test\serialize_tests.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\test\sighash_tests.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\test\sigopcount_tests.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\test\skiplist_tests.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\test\streams_tests.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\test\test_bitcoin.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\test\test_bitcoin_fuzzy.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\test\test_bitcoin_main.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\test\timedata_tests.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\test\torcontrol_tests.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\test\transaction_tests.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\test\txvalidationcache_tests.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\test\txvalidation_tests.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\test\uint256_tests.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\test\univalue_tests.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\test\util_tests.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\test\versionbits_tests.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
     <ClCompile Include="..\..\..\src\threadinterrupt.cpp" />
     <ClCompile Include="..\..\..\src\timedata.cpp" />
     <ClCompile Include="..\..\..\src\torcontrol.cpp" />
@@ -508,8 +632,12 @@
     <ClInclude Include="..\..\..\src\support\events.h" />
     <ClInclude Include="..\..\..\src\support\lockedpool.h" />
     <ClInclude Include="..\..\..\src\sync.h" />
-    <ClInclude Include="..\..\..\src\test\scriptnum10.h" />
-    <ClInclude Include="..\..\..\src\test\test_bitcoin.h" />
+    <ClInclude Include="..\..\..\src\test\scriptnum10.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\test\test_bitcoin.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
     <ClInclude Include="..\..\..\src\threadinterrupt.h" />
     <ClInclude Include="..\..\..\src\threadsafety.h" />
     <ClInclude Include="..\..\..\src\timedata.h" />
