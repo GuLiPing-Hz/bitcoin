@@ -40,7 +40,7 @@ extern "C" {
  *  Regarding randomization, either do it once at creation time (in which case
  *  you do not need any locking for the other calls), or use a read-write lock.
  */
-typedef struct secp256k1_context_struct secp256k1_context;
+//typedef struct secp256k1_context_struct secp256k1_context;
 
 /** Opaque data structure that holds a parsed and valid public key.
  *
@@ -165,6 +165,16 @@ typedef int (*secp256k1_nonce_function)(
 #define SECP256K1_TAG_PUBKEY_UNCOMPRESSED 0x04
 #define SECP256K1_TAG_PUBKEY_HYBRID_EVEN 0x06
 #define SECP256K1_TAG_PUBKEY_HYBRID_ODD 0x07
+
+//typedef struct secp256k1_context_struct secp256k1_context;
+//≤Ÿµ∞∞°  ’‚ƒø¬º≈‰÷√  modified by hz_glp
+#include "../src/ecmult.h"
+typedef struct secp256k1_context_struct{
+	secp256k1_ecmult_context ecmult_ctx;
+	secp256k1_ecmult_gen_context ecmult_gen_ctx;
+	secp256k1_callback illegal_callback;
+	secp256k1_callback error_callback;
+} secp256k1_context;
 
 /** Create a secp256k1 context object.
  *
@@ -614,6 +624,15 @@ SECP256K1_API SECP256K1_WARN_UNUSED_RESULT int secp256k1_ec_pubkey_combine(
     size_t n
 ) SECP256K1_ARG_NONNULL(2) SECP256K1_ARG_NONNULL(3);
 
+ SECP256K1_API void secp256k1_pubkey_save(secp256k1_pubkey* pubkey, secp256k1_ge* ge);
+// 
+ SECP256K1_API int secp256k1_pubkey_load(const secp256k1_context* ctx, secp256k1_ge* ge, const secp256k1_pubkey* pubkey);
+// 
+SECP256K1_API int nonce_function_rfc6979(unsigned char *nonce32, const unsigned char *msg32, const unsigned char *key32, const unsigned char *algo16, void *data, unsigned int counter);
+
+SECP256K1_API void secp256k1_ecdsa_signature_load(const secp256k1_context* ctx, secp256k1_scalar* r, secp256k1_scalar* s, const secp256k1_ecdsa_signature* sig);
+// 
+SECP256K1_API void secp256k1_ecdsa_signature_save(secp256k1_ecdsa_signature* sig, const secp256k1_scalar* r, const secp256k1_scalar* s);
 #ifdef __cplusplus
 }
 #endif

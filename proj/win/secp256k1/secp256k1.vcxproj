@@ -82,6 +82,8 @@
     <Text Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\..\src\secp256k1\contrib\lax_der_parsing.h" />
+    <ClInclude Include="..\..\..\src\secp256k1\contrib\lax_der_privatekey_parsing.h" />
     <ClInclude Include="..\..\..\src\secp256k1\include\secp256k1.h" />
     <ClInclude Include="..\..\..\src\secp256k1\include\secp256k1_ecdh.h" />
     <ClInclude Include="..\..\..\src\secp256k1\include\secp256k1_recovery.h" />
@@ -130,6 +132,12 @@
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\..\src\secp256k1\contrib\lax_der_parsing.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\secp256k1\contrib\lax_der_privatekey_parsing.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
     <ClCompile Include="..\..\..\src\secp256k1\src\bench_ecdh.c">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
     </ClCompile>
@@ -148,12 +156,8 @@
     <ClCompile Include="..\..\..\src\secp256k1\src\gen_context.c">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="..\..\..\src\secp256k1\src\secp256k1.c">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
-    </ClCompile>
-    <ClCompile Include="..\..\..\src\secp256k1\src\tests.c">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
-    </ClCompile>
+    <ClCompile Include="..\..\..\src\secp256k1\src\secp256k1.c" />
+    <ClCompile Include="..\..\..\src\secp256k1\src\tests.c" />
     <ClCompile Include="..\..\..\src\secp256k1\src\tests_exhaustive.c">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
     </ClCompile>

@@ -16,6 +16,9 @@
     <Filter Include="src">
       <UniqueIdentifier>{a00cc073-fca8-4a32-a29f-c0151c76bffa}</UniqueIdentifier>
     </Filter>
+    <Filter Include="contrib">
+      <UniqueIdentifier>{57d2572f-ec6c-41d8-8454-c832a4fd110c}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Text Include="ReadMe.txt" />
@@ -159,6 +162,12 @@
     <ClInclude Include="..\libsecp256k1-config.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\..\src\secp256k1\contrib\lax_der_privatekey_parsing.h">
+      <Filter>contrib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\secp256k1\contrib\lax_der_parsing.h">
+      <Filter>contrib</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -193,6 +202,12 @@
     </ClCompile>
     <ClCompile Include="secp256k1_main.cpp">
       <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\secp256k1\contrib\lax_der_privatekey_parsing.c">
+      <Filter>contrib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\secp256k1\contrib\lax_der_parsing.c">
+      <Filter>contrib</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

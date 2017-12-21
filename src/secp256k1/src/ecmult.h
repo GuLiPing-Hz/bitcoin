@@ -9,6 +9,7 @@
 
 #include "num.h"
 #include "group.h"
+#include "ecmult_gen.h"
 
 typedef struct {
     /* For accelerating the computation of a*P + b*G: */
