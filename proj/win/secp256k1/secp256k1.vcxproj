@@ -1,0 +1,168 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{FE7485E2-05F8-4BEB-9343-0B9D73E7844D}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>secp256k1</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_LIB;_CRT_SECURE_NO_WARNINGS;HAVE_CONFIG_H;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\..\..\src\secp256k1\include;$(SolutionDir)..\..\..\src\secp256k1;$(SolutionDir)..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\src\secp256k1\include\secp256k1.h" />
+    <ClInclude Include="..\..\..\src\secp256k1\include\secp256k1_ecdh.h" />
+    <ClInclude Include="..\..\..\src\secp256k1\include\secp256k1_recovery.h" />
+    <ClInclude Include="..\..\..\src\secp256k1\src\basic-config.h" />
+    <ClInclude Include="..\..\..\src\secp256k1\src\bench.h" />
+    <ClInclude Include="..\..\..\src\secp256k1\src\ecdsa.h" />
+    <ClInclude Include="..\..\..\src\secp256k1\src\ecdsa_impl.h" />
+    <ClInclude Include="..\..\..\src\secp256k1\src\eckey.h" />
+    <ClInclude Include="..\..\..\src\secp256k1\src\eckey_impl.h" />
+    <ClInclude Include="..\..\..\src\secp256k1\src\ecmult.h" />
+    <ClInclude Include="..\..\..\src\secp256k1\src\ecmult_const.h" />
+    <ClInclude Include="..\..\..\src\secp256k1\src\ecmult_const_impl.h" />
+    <ClInclude Include="..\..\..\src\secp256k1\src\ecmult_gen.h" />
+    <ClInclude Include="..\..\..\src\secp256k1\src\ecmult_gen_impl.h" />
+    <ClInclude Include="..\..\..\src\secp256k1\src\ecmult_impl.h" />
+    <ClInclude Include="..\..\..\src\secp256k1\src\field.h" />
+    <ClInclude Include="..\..\..\src\secp256k1\src\field_10x26.h" />
+    <ClInclude Include="..\..\..\src\secp256k1\src\field_10x26_impl.h" />
+    <ClInclude Include="..\..\..\src\secp256k1\src\field_5x52.h" />
+    <ClInclude Include="..\..\..\src\secp256k1\src\field_5x52_asm_impl.h" />
+    <ClInclude Include="..\..\..\src\secp256k1\src\field_5x52_impl.h" />
+    <ClInclude Include="..\..\..\src\secp256k1\src\field_5x52_int128_impl.h" />
+    <ClInclude Include="..\..\..\src\secp256k1\src\field_impl.h" />
+    <ClInclude Include="..\..\..\src\secp256k1\src\group.h" />
+    <ClInclude Include="..\..\..\src\secp256k1\src\group_impl.h" />
+    <ClInclude Include="..\..\..\src\secp256k1\src\hash.h" />
+    <ClInclude Include="..\..\..\src\secp256k1\src\hash_impl.h" />
+    <ClInclude Include="..\..\..\src\secp256k1\src\num.h" />
+    <ClInclude Include="..\..\..\src\secp256k1\src\num_gmp.h" />
+    <ClInclude Include="..\..\..\src\secp256k1\src\num_gmp_impl.h" />
+    <ClInclude Include="..\..\..\src\secp256k1\src\num_impl.h" />
+    <ClInclude Include="..\..\..\src\secp256k1\src\scalar.h" />
+    <ClInclude Include="..\..\..\src\secp256k1\src\scalar_4x64.h" />
+    <ClInclude Include="..\..\..\src\secp256k1\src\scalar_4x64_impl.h" />
+    <ClInclude Include="..\..\..\src\secp256k1\src\scalar_8x32.h" />
+    <ClInclude Include="..\..\..\src\secp256k1\src\scalar_8x32_impl.h" />
+    <ClInclude Include="..\..\..\src\secp256k1\src\scalar_impl.h" />
+    <ClInclude Include="..\..\..\src\secp256k1\src\scalar_low.h" />
+    <ClInclude Include="..\..\..\src\secp256k1\src\scalar_low_impl.h" />
+    <ClInclude Include="..\..\..\src\secp256k1\src\testrand.h" />
+    <ClInclude Include="..\..\..\src\secp256k1\src\testrand_impl.h" />
+    <ClInclude Include="..\..\..\src\secp256k1\src\util.h" />
+    <ClInclude Include="..\libsecp256k1-config.h" />
+    <ClInclude Include="..\timec.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\src\secp256k1\src\bench_ecdh.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\secp256k1\src\bench_internal.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\secp256k1\src\bench_recover.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\secp256k1\src\bench_sign.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\secp256k1\src\bench_verify.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\secp256k1\src\gen_context.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\secp256k1\src\secp256k1.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\secp256k1\src\tests.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\secp256k1\src\tests_exhaustive.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="secp256k1_main.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

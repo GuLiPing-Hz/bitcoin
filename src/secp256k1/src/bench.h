@@ -9,13 +9,15 @@
 
 #include <stdio.h>
 #include <math.h>
-#include "sys/time.h"
+#include <time.h>
 
-static double gettimedouble(void) {
-    struct timeval tv;
-    gettimeofday(&tv, NULL);
-    return tv.tv_usec * 0.000001 + tv.tv_sec;
-}
+//专门为c写的函数
+#include "timec.h"
+// static double gettimedouble(void) {
+//     struct timeval tv;
+//     gettimeofday(&tv, NULL);
+//     return tv.tv_usec * 0.000001 + tv.tv_sec;
+// }
 
 void print_number(double x) {
     double y = x;
