@@ -1,4 +1,4 @@
-#ifndef SECP256K1_H
+﻿#ifndef SECP256K1_H
 #define SECP256K1_H
 
 #ifdef __cplusplus
@@ -167,7 +167,7 @@ typedef int (*secp256k1_nonce_function)(
 #define SECP256K1_TAG_PUBKEY_HYBRID_ODD 0x07
 
 //typedef struct secp256k1_context_struct secp256k1_context;
-//�ٵ���  ��Ŀ¼����  modified by hz_glp
+//操蛋啊  这目录配置  modified by hz_glp
 #include "../src/ecmult.h"
 typedef struct secp256k1_context_struct{
 	secp256k1_ecmult_context ecmult_ctx;
@@ -449,6 +449,10 @@ SECP256K1_API int secp256k1_ecdsa_signature_normalize(
 /** An implementation of RFC6979 (using HMAC-SHA256) as nonce generation function.
  * If a data pointer is passed, it is assumed to be a pointer to 32 bytes of
  * extra entropy.
+ *
+ *  Nonce是或Number once的缩写，在密码学中Nonce是一个只被使用一次的任意或非重复的随机数值。
+ * 在加密技术中的初始向量和加密散列函数都发挥着重要作用，
+ * 在各类验证协议的通信应用中确保验证信息不被重复使用 以对抗重放攻击(Replay Attack)。
  */
 SECP256K1_API extern const secp256k1_nonce_function secp256k1_nonce_function_rfc6979;
 
@@ -508,7 +512,7 @@ SECP256K1_API SECP256K1_WARN_UNUSED_RESULT int secp256k1_ec_pubkey_create(
  *
  *  Returns: 1 always
  *  Args:   ctx:        pointer to a context object
- *  In/Out: pubkey:     pointer to the public key to be negated (cannot be NULL)
+ *  In/Out: pubkey:     pointer to the private key to be negated (cannot be NULL)
  */
 SECP256K1_API SECP256K1_WARN_UNUSED_RESULT int secp256k1_ec_privkey_negate(
     const secp256k1_context* ctx,
@@ -624,11 +628,12 @@ SECP256K1_API SECP256K1_WARN_UNUSED_RESULT int secp256k1_ec_pubkey_combine(
     size_t n
 ) SECP256K1_ARG_NONNULL(2) SECP256K1_ARG_NONNULL(3);
 
+/*
+custom function by glp
+*/
  SECP256K1_API void secp256k1_pubkey_save(secp256k1_pubkey* pubkey, secp256k1_ge* ge);
 // 
  SECP256K1_API int secp256k1_pubkey_load(const secp256k1_context* ctx, secp256k1_ge* ge, const secp256k1_pubkey* pubkey);
-// 
-SECP256K1_API int nonce_function_rfc6979(unsigned char *nonce32, const unsigned char *msg32, const unsigned char *key32, const unsigned char *algo16, void *data, unsigned int counter);
 
 SECP256K1_API void secp256k1_ecdsa_signature_load(const secp256k1_context* ctx, secp256k1_scalar* r, secp256k1_scalar* s, const secp256k1_ecdsa_signature* sig);
 // 
