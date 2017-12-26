@@ -5,7 +5,7 @@
  **********************************************************************/
 
 #include <string.h>
-
+#include "libsecp256k1-config.h"
 #include "include/secp256k1.h"
 #include "include/secp256k1_ecdh.h"
 #include "util.h"

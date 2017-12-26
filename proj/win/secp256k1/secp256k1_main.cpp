@@ -3,6 +3,9 @@
 
 #include "stdafx.h"
 
+extern "C" {
+#include "secp256k1.h"
+}
 
 int main(int argc, _TCHAR* argv[])
 {

@@ -19,6 +19,9 @@
     <Filter Include="contrib">
       <UniqueIdentifier>{57d2572f-ec6c-41d8-8454-c832a4fd110c}</UniqueIdentifier>
     </Filter>
+    <Filter Include="src\modules">
+      <UniqueIdentifier>{fede2306-5386-406d-8b46-a2f2b4430649}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Text Include="ReadMe.txt" />

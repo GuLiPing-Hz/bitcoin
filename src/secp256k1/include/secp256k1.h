@@ -344,7 +344,7 @@ SECP256K1_API int secp256k1_ecdsa_signature_parse_der(
  *
  *  Returns: 1 if enough space was available to serialize, 0 otherwise
  *  Args:   ctx:       a secp256k1 context object
- *  Out:    output:    a pointer to an array to store the DER serialization
+ *  Out:    output:    a pointer to an array to store the DER serialization （至少保留72-byte）
  *  In/Out: outputlen: a pointer to a length integer. Initially, this integer
  *                     should be set to the length of output. After the call
  *                     it will be set to the length of the serialization (even
