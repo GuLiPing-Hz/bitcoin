@@ -63,6 +63,12 @@ public:
     void Decrypt(unsigned char plaintext[16], const unsigned char ciphertext[16]) const;
 };
 
+/*
+aes256加密类，
+加密前先使用ivIn和需要加密的数据进行亦或运算，然后再使用aes256加密
+
+padIn 是指是否允许长度不能被AES_BLOCKSIZE除尽的数据
+*/
 class AES256CBCEncrypt
 {
 public:
@@ -76,6 +82,12 @@ private:
     unsigned char iv[AES_BLOCKSIZE];
 };
 
+/*
+aes256解密类，
+先使用aes256解密，然后对剩下的数据做亦或运算
+
+padIn 是指是否允许长度不能被AES_BLOCKSIZE除尽的数据
+*/
 class AES256CBCDecrypt
 {
 public:
