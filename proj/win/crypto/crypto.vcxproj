@@ -82,6 +82,9 @@
     <Text Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\..\src\compat\byteswap.h" />
+    <ClInclude Include="..\..\..\src\compat\endian.h" />
+    <ClInclude Include="..\..\..\src\compat\sanity.h" />
     <ClInclude Include="..\..\..\src\crypto\aes.h" />
     <ClInclude Include="..\..\..\src\crypto\chacha20.h" />
     <ClInclude Include="..\..\..\src\crypto\common.h" />
@@ -99,6 +102,14 @@
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\..\src\compat\glibcxx_sanity.cpp" />
+    <ClCompile Include="..\..\..\src\compat\glibc_compat.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\compat\glibc_sanity.cpp" />
+    <ClCompile Include="..\..\..\src\compat\strnlen.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
     <ClCompile Include="..\..\..\src\crypto\aes.cpp" />
     <ClCompile Include="..\..\..\src\crypto\chacha20.cpp" />
     <ClCompile Include="..\..\..\src\crypto\ctaes\bench.c">

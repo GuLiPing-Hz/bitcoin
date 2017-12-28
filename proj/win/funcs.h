@@ -49,7 +49,7 @@ const char* ByteString(const char *msg, const unsigned int len);
 void SleepMs(int msecs);
 
 //异或简单加密算
-//std::string XorString(const char *data, int datalen, const char *key, int len);
+std::string XorString(const char *data, int datalen, const char *key, int len);
 
 
 

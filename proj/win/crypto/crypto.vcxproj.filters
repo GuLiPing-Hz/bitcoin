@@ -16,11 +16,17 @@
     <Filter Include="src">
       <UniqueIdentifier>{23a1620b-757c-40bc-be79-e0296dc1cc27}</UniqueIdentifier>
     </Filter>
-    <Filter Include="src\ctaes">
-      <UniqueIdentifier>{26921a20-ba7f-4f50-9c41-296e829a2c36}</UniqueIdentifier>
-    </Filter>
     <Filter Include="win">
       <UniqueIdentifier>{96978fde-3cb5-46ab-8d3d-2be6452ada12}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\crypto">
+      <UniqueIdentifier>{2d2c793f-df20-4403-9dc3-7a70f3439512}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\crypto\ctaes">
+      <UniqueIdentifier>{26921a20-ba7f-4f50-9c41-296e829a2c36}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\compact">
+      <UniqueIdentifier>{e056477b-7bf4-4458-a43a-55c5ddd97184}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -34,34 +40,7 @@
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\src\crypto\ctaes\ctaes.h">
-      <Filter>src\ctaes</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\src\crypto\hmac_sha512.h">
-      <Filter>src</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\src\crypto\ripemd160.h">
-      <Filter>src</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\src\crypto\sha1.h">
-      <Filter>src</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\src\crypto\sha256.h">
-      <Filter>src</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\src\crypto\sha512.h">
-      <Filter>src</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\src\crypto\aes.h">
-      <Filter>src</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\src\crypto\chacha20.h">
-      <Filter>src</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\src\crypto\common.h">
-      <Filter>src</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\src\crypto\hmac_sha256.h">
-      <Filter>src</Filter>
+      <Filter>src\crypto\ctaes</Filter>
     </ClInclude>
     <ClInclude Include="..\funcs.h">
       <Filter>win</Filter>
@@ -72,6 +51,42 @@
     <ClInclude Include="..\config.h">
       <Filter>win</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\..\src\crypto\aes.h">
+      <Filter>src\crypto</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\crypto\chacha20.h">
+      <Filter>src\crypto</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\crypto\common.h">
+      <Filter>src\crypto</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\crypto\hmac_sha256.h">
+      <Filter>src\crypto</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\crypto\hmac_sha512.h">
+      <Filter>src\crypto</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\crypto\ripemd160.h">
+      <Filter>src\crypto</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\crypto\sha1.h">
+      <Filter>src\crypto</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\crypto\sha256.h">
+      <Filter>src\crypto</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\crypto\sha512.h">
+      <Filter>src\crypto</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\compat\sanity.h">
+      <Filter>src\compact</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\compat\byteswap.h">
+      <Filter>src\compact</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\compat\endian.h">
+      <Filter>src\compact</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -81,43 +96,55 @@
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\src\crypto\ctaes\ctaes.c">
-      <Filter>src\ctaes</Filter>
+      <Filter>src\crypto\ctaes</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\src\crypto\ctaes\bench.c">
-      <Filter>src\ctaes</Filter>
+      <Filter>src\crypto\ctaes</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\src\crypto\ctaes\test.c">
-      <Filter>src\ctaes</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\src\crypto\ripemd160.cpp">
-      <Filter>src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\src\crypto\sha1.cpp">
-      <Filter>src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\src\crypto\sha256.cpp">
-      <Filter>src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\src\crypto\sha256_sse4.cpp">
-      <Filter>src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\src\crypto\sha512.cpp">
-      <Filter>src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\src\crypto\aes.cpp">
-      <Filter>src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\src\crypto\chacha20.cpp">
-      <Filter>src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\src\crypto\hmac_sha256.cpp">
-      <Filter>src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\src\crypto\hmac_sha512.cpp">
-      <Filter>src</Filter>
+      <Filter>src\crypto\ctaes</Filter>
     </ClCompile>
     <ClCompile Include="..\funcs.cpp">
       <Filter>win</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\crypto\aes.cpp">
+      <Filter>src\crypto</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\crypto\chacha20.cpp">
+      <Filter>src\crypto</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\crypto\hmac_sha256.cpp">
+      <Filter>src\crypto</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\crypto\hmac_sha512.cpp">
+      <Filter>src\crypto</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\crypto\ripemd160.cpp">
+      <Filter>src\crypto</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\crypto\sha1.cpp">
+      <Filter>src\crypto</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\crypto\sha256.cpp">
+      <Filter>src\crypto</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\crypto\sha256_sse4.cpp">
+      <Filter>src\crypto</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\crypto\sha512.cpp">
+      <Filter>src\crypto</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\compat\glibc_compat.cpp">
+      <Filter>src\compact</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\compat\glibc_sanity.cpp">
+      <Filter>src\compact</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\compat\glibcxx_sanity.cpp">
+      <Filter>src\compact</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\compat\strnlen.cpp">
+      <Filter>src\compact</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
