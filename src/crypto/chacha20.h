@@ -8,7 +8,10 @@
 #include <stdint.h>
 #include <stdlib.h>
 
-/** A PRNG class for ChaCha20. */
+/** 
+A PRNG class for ChaCha20. 
+PRNG(伪随机序列发生器)  pseudo-random number generator
+*/
 class ChaCha20
 {
 private:
