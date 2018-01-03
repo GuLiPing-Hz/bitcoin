@@ -7,6 +7,7 @@
 #include "funcs.h"
 #include "compat/endian.h"
 #include "crypto/chacha20.h"
+#include "timec.h"
 
 void testAes256(){
 	unsigned char key[AES256_KEYSIZE] = { 0 };
@@ -101,11 +102,36 @@ void testChaCha20(){
 	LogCiphertext(data, sizeof(data));
 }
 
+uint32_t inline Ch(uint32_t x, uint32_t y, uint32_t z) { return z ^ (x & (y ^ z)); }
+uint32_t inline Maj(uint32_t x, uint32_t y, uint32_t z) { return (x & y) | (z & (x | y)); }
+
+#define ROTLEFT(a,b) (((a) << (b)) | ((a) >> (32-(b))))
+#define ROTRIGHT(a,b) (((a) >> (b)) | ((a) << (32-(b))))
+
+#define M_CH(x,y,z) (((x) & (y)) ^ (~(x) & (z)))
+#define M_MAJ(x,y,z) (((x) & (y)) ^ ((x) & (z)) ^ ((y) & (z)))
+#define M_EP0(x) (ROTRIGHT(x,2) ^ ROTRIGHT(x,13) ^ ROTRIGHT(x,22))
+#define M_EP1(x) (ROTRIGHT(x,6) ^ ROTRIGHT(x,11) ^ ROTRIGHT(x,25))
+#define M_SIG0(x) (ROTRIGHT(x,7) ^ ROTRIGHT(x,18) ^ ((x) >> 3))
+#define M_SIG1(x) (ROTRIGHT(x,17) ^ ROTRIGHT(x,19) ^ ((x) >> 10))
+
 int _tmain(int argc, _TCHAR* argv[])
 {
 	testAes256();//测试aes加密解密
 	testEndian();//测试大小端字节序
 	testChaCha20();//伪随机数生成器 for chacha20
+
+	double t1 = gettimedouble();
+	LOGI("1 %lf", t1);
+	uint32_t a1 = Ch(11, 101, 1011);
+	double t2 = gettimedouble();
+	LOGI("2 %lf", t2-t1);
+	uint32_t a2 = M_CH(11, 101, 1011);
+	double t3 = gettimedouble();
+	LOGI("3 %lf", t3-t2);
+
+	uint32_t b1 = Maj(11, 102, 1111);
+	uint32_t b2 = M_MAJ(11, 102, 1111);
 
 	return 0;
 }
