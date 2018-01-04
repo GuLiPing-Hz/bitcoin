@@ -8,6 +8,8 @@
 #include "compat/endian.h"
 #include "crypto/chacha20.h"
 #include "timec.h"
+#include "timer.h"
+#include "crypto/hmac_sha512.h"
 
 void testAes256(){
 	unsigned char key[AES256_KEYSIZE] = { 0 };
@@ -102,6 +104,25 @@ void testChaCha20(){
 	LogCiphertext(data, sizeof(data));
 }
 
+void testSha512(){
+	Wrap::PreciseTimer timer;
+
+	unsigned char rkey[128] = { 0 };
+	for (int i = 0; i < 128; i++){
+		rkey[i] = i + 10;
+	}
+	CHMAC_SHA512 sha512(rkey,sizeof(rkey));
+	unsigned char hash[64] = { 0 };
+
+	timer.start();
+	sha512.Write(rkey, sizeof(rkey));
+	sha512.Finalize(hash);
+	timer.stop();
+	LOGI("testSha512 %lf Î¢Ãë", timer.getElapsedTimeInMicroSec());
+	LogCiphertext(hash, sizeof(hash));
+	//d4-1d-b0-86-2d-e1-5a-c5-60-70-f5-af-80-b5-6a-92-79-cd-2b-15-19-c0-67-e7-b6-17-03-e1-1b-30-8f-71-b3-ad-c8-52-57-65-9c-b1-98-a5-c7-11-5f-ba-a6-6d-7e-9c-23-ea-51-e1-75-ab-3b-77-8d-0d-6c-f9-b1-33-
+}
+
 uint32_t inline Ch(uint32_t x, uint32_t y, uint32_t z) { return z ^ (x & (y ^ z)); }
 uint32_t inline Maj(uint32_t x, uint32_t y, uint32_t z) { return (x & y) | (z & (x | y)); }
 
@@ -120,18 +141,7 @@ int _tmain(int argc, _TCHAR* argv[])
 	testAes256();//²âÊÔaes¼ÓÃÜ½âÃÜ
 	testEndian();//²âÊÔ´óÐ¡¶Ë×Ö½ÚÐò
 	testChaCha20();//Î±Ëæ»úÊýÉú³ÉÆ÷ for chacha20
-
-	double t1 = gettimedouble();
-	LOGI("1 %lf", t1);
-	uint32_t a1 = Ch(11, 101, 1011);
-	double t2 = gettimedouble();
-	LOGI("2 %lf", t2-t1);
-	uint32_t a2 = M_CH(11, 101, 1011);
-	double t3 = gettimedouble();
-	LOGI("3 %lf", t3-t2);
-
-	uint32_t b1 = Maj(11, 102, 1111);
-	uint32_t b2 = M_MAJ(11, 102, 1111);
+	testSha512();
 
 	return 0;
 }

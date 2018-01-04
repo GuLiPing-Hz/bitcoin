@@ -87,6 +87,9 @@
     <ClInclude Include="..\..\..\src\compat\endian.h">
       <Filter>src\compact</Filter>
     </ClInclude>
+    <ClInclude Include="..\timer.h">
+      <Filter>win</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -145,6 +148,9 @@
     </ClCompile>
     <ClCompile Include="..\..\..\src\compat\strnlen.cpp">
       <Filter>src\compact</Filter>
+    </ClCompile>
+    <ClCompile Include="..\timer.cpp">
+      <Filter>win</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
