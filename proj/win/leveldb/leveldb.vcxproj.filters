@@ -1,0 +1,444 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{4fed606c-cae3-4347-9ac6-256086373ca6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\db">
+      <UniqueIdentifier>{2bbd4410-4403-4b49-97e0-f4019a3d07cd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\helpers">
+      <UniqueIdentifier>{dfb6eda0-148b-4296-acd1-777b7e622dab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\helpers\memenv">
+      <UniqueIdentifier>{e654104b-f528-45b8-82e4-cda5325cc078}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\include">
+      <UniqueIdentifier>{746a4b0b-b2c2-49df-b4dc-8675d97a321e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\include\leveldb">
+      <UniqueIdentifier>{c70e84d7-f749-4558-9944-55c838c87bbb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\port">
+      <UniqueIdentifier>{f4854c90-8374-4fe5-9e72-982e6486d04d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="win">
+      <UniqueIdentifier>{947f44bb-c3d4-4bc2-abda-0fc3cf933a69}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\table">
+      <UniqueIdentifier>{76c44c67-7083-43c8-bd63-86c6f7f8f629}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\util">
+      <UniqueIdentifier>{6a921943-3e95-482e-8859-730cf8b102a6}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\leveldb\db\builder.h">
+      <Filter>src\db</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\leveldb\db\db_impl.h">
+      <Filter>src\db</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\leveldb\db\db_iter.h">
+      <Filter>src\db</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\leveldb\db\dbformat.h">
+      <Filter>src\db</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\leveldb\db\filename.h">
+      <Filter>src\db</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\leveldb\db\log_format.h">
+      <Filter>src\db</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\leveldb\db\log_reader.h">
+      <Filter>src\db</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\leveldb\db\log_writer.h">
+      <Filter>src\db</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\leveldb\db\memtable.h">
+      <Filter>src\db</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\leveldb\db\skiplist.h">
+      <Filter>src\db</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\leveldb\db\snapshot.h">
+      <Filter>src\db</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\leveldb\db\table_cache.h">
+      <Filter>src\db</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\leveldb\db\version_edit.h">
+      <Filter>src\db</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\leveldb\db\version_set.h">
+      <Filter>src\db</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\leveldb\db\write_batch_internal.h">
+      <Filter>src\db</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\leveldb\helpers\memenv\memenv.h">
+      <Filter>src\helpers\memenv</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\leveldb\include\leveldb\env.h">
+      <Filter>src\include\leveldb</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\leveldb\include\leveldb\filter_policy.h">
+      <Filter>src\include\leveldb</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\leveldb\include\leveldb\iterator.h">
+      <Filter>src\include\leveldb</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\leveldb\include\leveldb\options.h">
+      <Filter>src\include\leveldb</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\leveldb\include\leveldb\slice.h">
+      <Filter>src\include\leveldb</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\leveldb\include\leveldb\status.h">
+      <Filter>src\include\leveldb</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\leveldb\include\leveldb\table.h">
+      <Filter>src\include\leveldb</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\leveldb\include\leveldb\table_builder.h">
+      <Filter>src\include\leveldb</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\leveldb\include\leveldb\write_batch.h">
+      <Filter>src\include\leveldb</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\leveldb\include\leveldb\c.h">
+      <Filter>src\include\leveldb</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\leveldb\include\leveldb\cache.h">
+      <Filter>src\include\leveldb</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\leveldb\include\leveldb\comparator.h">
+      <Filter>src\include\leveldb</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\leveldb\include\leveldb\db.h">
+      <Filter>src\include\leveldb</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\leveldb\include\leveldb\dumpfile.h">
+      <Filter>src\include\leveldb</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\leveldb\port\port_win.h">
+      <Filter>src\port</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\leveldb\port\thread_annotations.h">
+      <Filter>src\port</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\leveldb\port\atomic_pointer.h">
+      <Filter>src\port</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\leveldb\port\port.h">
+      <Filter>src\port</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\leveldb\port\port_example.h">
+      <Filter>src\port</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\leveldb\port\port_posix.h">
+      <Filter>src\port</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\leveldb\table\filter_block.h">
+      <Filter>src\table</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\leveldb\table\format.h">
+      <Filter>src\table</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\leveldb\table\iterator_wrapper.h">
+      <Filter>src\table</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\leveldb\table\merger.h">
+      <Filter>src\table</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\leveldb\table\two_level_iterator.h">
+      <Filter>src\table</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\leveldb\table\block.h">
+      <Filter>src\table</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\leveldb\table\block_builder.h">
+      <Filter>src\table</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\leveldb\util\coding.h">
+      <Filter>src\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\leveldb\util\crc32c.h">
+      <Filter>src\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\leveldb\util\env_posix_test_helper.h">
+      <Filter>src\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\leveldb\util\hash.h">
+      <Filter>src\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\leveldb\util\histogram.h">
+      <Filter>src\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\leveldb\util\logging.h">
+      <Filter>src\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\leveldb\util\mutexlock.h">
+      <Filter>src\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\leveldb\util\posix_logger.h">
+      <Filter>src\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\leveldb\util\random.h">
+      <Filter>src\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\leveldb\util\testharness.h">
+      <Filter>src\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\leveldb\util\testutil.h">
+      <Filter>src\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\leveldb\util\arena.h">
+      <Filter>src\util</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="leveldb.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\leveldb\db\c.cc">
+      <Filter>src\db</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\leveldb\db\c_test.c">
+      <Filter>src\db</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\leveldb\db\corruption_test.cc">
+      <Filter>src\db</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\leveldb\db\db_bench.cc">
+      <Filter>src\db</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\leveldb\db\db_impl.cc">
+      <Filter>src\db</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\leveldb\db\db_iter.cc">
+      <Filter>src\db</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\leveldb\db\db_test.cc">
+      <Filter>src\db</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\leveldb\db\dbformat.cc">
+      <Filter>src\db</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\leveldb\db\dbformat_test.cc">
+      <Filter>src\db</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\leveldb\db\dumpfile.cc">
+      <Filter>src\db</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\leveldb\db\fault_injection_test.cc">
+      <Filter>src\db</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\leveldb\db\filename.cc">
+      <Filter>src\db</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\leveldb\db\filename_test.cc">
+      <Filter>src\db</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\leveldb\db\leveldbutil.cc">
+      <Filter>src\db</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\leveldb\db\log_reader.cc">
+      <Filter>src\db</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\leveldb\db\log_test.cc">
+      <Filter>src\db</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\leveldb\db\log_writer.cc">
+      <Filter>src\db</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\leveldb\db\memtable.cc">
+      <Filter>src\db</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\leveldb\db\recovery_test.cc">
+      <Filter>src\db</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\leveldb\db\repair.cc">
+      <Filter>src\db</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\leveldb\db\skiplist_test.cc">
+      <Filter>src\db</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\leveldb\db\table_cache.cc">
+      <Filter>src\db</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\leveldb\db\version_edit.cc">
+      <Filter>src\db</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\leveldb\db\version_edit_test.cc">
+      <Filter>src\db</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\leveldb\db\version_set.cc">
+      <Filter>src\db</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\leveldb\db\version_set_test.cc">
+      <Filter>src\db</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\leveldb\db\write_batch.cc">
+      <Filter>src\db</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\leveldb\db\write_batch_test.cc">
+      <Filter>src\db</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\leveldb\db\autocompact_test.cc">
+      <Filter>src\db</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\leveldb\db\builder.cc">
+      <Filter>src\db</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\leveldb\helpers\memenv\memenv_test.cc">
+      <Filter>src\helpers\memenv</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\leveldb\helpers\memenv\memenv.cc">
+      <Filter>src\helpers\memenv</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\leveldb\port\port_posix_sse.cc">
+      <Filter>src\port</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\leveldb\port\port_win.cc">
+      <Filter>src\port</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\leveldb\port\port_posix.cc">
+      <Filter>src\port</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\leveldb\table\filter_block_test.cc">
+      <Filter>src\table</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\leveldb\table\format.cc">
+      <Filter>src\table</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\leveldb\table\iterator.cc">
+      <Filter>src\table</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\leveldb\table\merger.cc">
+      <Filter>src\table</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\leveldb\table\table.cc">
+      <Filter>src\table</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\leveldb\table\table_builder.cc">
+      <Filter>src\table</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\leveldb\table\table_test.cc">
+      <Filter>src\table</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\leveldb\table\two_level_iterator.cc">
+      <Filter>src\table</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\leveldb\table\block.cc">
+      <Filter>src\table</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\leveldb\table\block_builder.cc">
+      <Filter>src\table</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\leveldb\table\filter_block.cc">
+      <Filter>src\table</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\leveldb\util\bloom_test.cc">
+      <Filter>src\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\leveldb\util\cache.cc">
+      <Filter>src\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\leveldb\util\cache_test.cc">
+      <Filter>src\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\leveldb\util\coding.cc">
+      <Filter>src\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\leveldb\util\coding_test.cc">
+      <Filter>src\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\leveldb\util\comparator.cc">
+      <Filter>src\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\leveldb\util\crc32c.cc">
+      <Filter>src\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\leveldb\util\crc32c_test.cc">
+      <Filter>src\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\leveldb\util\env.cc">
+      <Filter>src\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\leveldb\util\env_posix.cc">
+      <Filter>src\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\leveldb\util\env_posix_test.cc">
+      <Filter>src\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\leveldb\util\env_test.cc">
+      <Filter>src\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\leveldb\util\env_win.cc">
+      <Filter>src\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\leveldb\util\filter_policy.cc">
+      <Filter>src\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\leveldb\util\hash.cc">
+      <Filter>src\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\leveldb\util\hash_test.cc">
+      <Filter>src\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\leveldb\util\histogram.cc">
+      <Filter>src\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\leveldb\util\logging.cc">
+      <Filter>src\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\leveldb\util\options.cc">
+      <Filter>src\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\leveldb\util\status.cc">
+      <Filter>src\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\leveldb\util\testharness.cc">
+      <Filter>src\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\leveldb\util\testutil.cc">
+      <Filter>src\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\leveldb\util\arena.cc">
+      <Filter>src\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\leveldb\util\arena_test.cc">
+      <Filter>src\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\leveldb\util\bloom.cc">
+      <Filter>src\util</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
