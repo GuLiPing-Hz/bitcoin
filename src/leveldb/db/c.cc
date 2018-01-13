@@ -5,7 +5,6 @@
 #include "leveldb/c.h"
 
 #include <stdlib.h>
-#include <unistd.h>
 #include "leveldb/cache.h"
 #include "leveldb/comparator.h"
 #include "leveldb/db.h"
@@ -15,6 +14,10 @@
 #include "leveldb/options.h"
 #include "leveldb/status.h"
 #include "leveldb/write_batch.h"
+
+#ifdef WIN32
+#define strdup _strdup
+#endif
 
 using leveldb::Cache;
 using leveldb::Comparator;
@@ -134,11 +137,11 @@ static bool SaveError(char** errptr, const Status& s) {
   if (s.ok()) {
     return false;
   } else if (*errptr == NULL) {
-    *errptr = strdup(s.ToString().c_str());
+	  *errptr = strdup(s.ToString().c_str());
   } else {
     // TODO(sanjay): Merge with existing error?
     free(*errptr);
-    *errptr = strdup(s.ToString().c_str());
+	*errptr = strdup(s.ToString().c_str());
   }
   return true;
 }

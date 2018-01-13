@@ -4,7 +4,7 @@
 // Those files don't have any explicit license headers but the 
 // project (http://code.google.com/p/leveldbwin/) lists the 'New BSD License'
 // as the license.
-#if defined(LEVELDB_PLATFORM_WINDOWS)
+#if defined(WIN32)
 #include <map>
 
 
@@ -33,6 +33,8 @@
 #if defined DeleteFile
 #undef DeleteFile
 #endif
+
+#pragma comment(lib,"Shlwapi.lib")
 
 //Declarations
 namespace leveldb

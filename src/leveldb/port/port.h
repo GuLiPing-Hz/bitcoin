@@ -7,6 +7,12 @@
 
 #include <string.h>
 
+#ifdef WIN32
+#define LEVELDB_PLATFORM_WINDOWS
+#else
+#define LEVELDB_PLATFORM_POSIX
+#endif // WIN32
+
 // Include the appropriate platform specific file below.  If you are
 // porting to a new platform, see "port_example.h" for documentation
 // of what the new port_<platform>.h file must provide.

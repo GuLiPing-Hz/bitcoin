@@ -219,12 +219,12 @@
     <ClInclude Include="..\..\..\src\leveldb\util\arena.h">
       <Filter>src\util</Filter>
     </ClInclude>
+    <ClInclude Include="..\wrap_config.h">
+      <Filter>win</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="leveldb.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\src\leveldb\db\c.cc">
@@ -439,6 +439,9 @@
     </ClCompile>
     <ClCompile Include="..\..\..\src\leveldb\util\bloom.cc">
       <Filter>src\util</Filter>
+    </ClCompile>
+    <ClCompile Include="leveldb_main.cpp">
+      <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

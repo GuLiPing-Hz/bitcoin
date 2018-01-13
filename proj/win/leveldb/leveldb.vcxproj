@@ -20,7 +20,7 @@
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
     <PlatformToolset>v120</PlatformToolset>
-    <CharacterSet>Unicode</CharacterSet>
+    <CharacterSet>MultiByte</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
@@ -51,8 +51,9 @@
       </PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
-      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_LIB;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(SolutionDir)../../../src\leveldb;$(SolutionDir)../../../src\leveldb\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -136,82 +137,147 @@
     <ClInclude Include="..\..\..\src\leveldb\util\random.h" />
     <ClInclude Include="..\..\..\src\leveldb\util\testharness.h" />
     <ClInclude Include="..\..\..\src\leveldb\util\testutil.h" />
+    <ClInclude Include="..\wrap_config.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\src\leveldb\db\autocompact_test.cc" />
+    <ClCompile Include="..\..\..\src\leveldb\db\autocompact_test.cc">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+    </ClCompile>
     <ClCompile Include="..\..\..\src\leveldb\db\builder.cc" />
     <ClCompile Include="..\..\..\src\leveldb\db\c.cc" />
-    <ClCompile Include="..\..\..\src\leveldb\db\corruption_test.cc" />
-    <ClCompile Include="..\..\..\src\leveldb\db\c_test.c" />
+    <ClCompile Include="..\..\..\src\leveldb\db\corruption_test.cc">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\leveldb\db\c_test.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
     <ClCompile Include="..\..\..\src\leveldb\db\dbformat.cc" />
-    <ClCompile Include="..\..\..\src\leveldb\db\dbformat_test.cc" />
-    <ClCompile Include="..\..\..\src\leveldb\db\db_bench.cc" />
+    <ClCompile Include="..\..\..\src\leveldb\db\dbformat_test.cc">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\leveldb\db\db_bench.cc">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
     <ClCompile Include="..\..\..\src\leveldb\db\db_impl.cc" />
     <ClCompile Include="..\..\..\src\leveldb\db\db_iter.cc" />
-    <ClCompile Include="..\..\..\src\leveldb\db\db_test.cc" />
+    <ClCompile Include="..\..\..\src\leveldb\db\db_test.cc">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
     <ClCompile Include="..\..\..\src\leveldb\db\dumpfile.cc" />
-    <ClCompile Include="..\..\..\src\leveldb\db\fault_injection_test.cc" />
+    <ClCompile Include="..\..\..\src\leveldb\db\fault_injection_test.cc">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
     <ClCompile Include="..\..\..\src\leveldb\db\filename.cc" />
-    <ClCompile Include="..\..\..\src\leveldb\db\filename_test.cc" />
-    <ClCompile Include="..\..\..\src\leveldb\db\leveldbutil.cc" />
+    <ClCompile Include="..\..\..\src\leveldb\db\filename_test.cc">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\leveldb\db\leveldbutil.cc">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
     <ClCompile Include="..\..\..\src\leveldb\db\log_reader.cc" />
-    <ClCompile Include="..\..\..\src\leveldb\db\log_test.cc" />
+    <ClCompile Include="..\..\..\src\leveldb\db\log_test.cc">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
     <ClCompile Include="..\..\..\src\leveldb\db\log_writer.cc" />
     <ClCompile Include="..\..\..\src\leveldb\db\memtable.cc" />
-    <ClCompile Include="..\..\..\src\leveldb\db\recovery_test.cc" />
+    <ClCompile Include="..\..\..\src\leveldb\db\recovery_test.cc">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
     <ClCompile Include="..\..\..\src\leveldb\db\repair.cc" />
-    <ClCompile Include="..\..\..\src\leveldb\db\skiplist_test.cc" />
+    <ClCompile Include="..\..\..\src\leveldb\db\skiplist_test.cc">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
     <ClCompile Include="..\..\..\src\leveldb\db\table_cache.cc" />
     <ClCompile Include="..\..\..\src\leveldb\db\version_edit.cc" />
-    <ClCompile Include="..\..\..\src\leveldb\db\version_edit_test.cc" />
+    <ClCompile Include="..\..\..\src\leveldb\db\version_edit_test.cc">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
     <ClCompile Include="..\..\..\src\leveldb\db\version_set.cc" />
-    <ClCompile Include="..\..\..\src\leveldb\db\version_set_test.cc" />
+    <ClCompile Include="..\..\..\src\leveldb\db\version_set_test.cc">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
     <ClCompile Include="..\..\..\src\leveldb\db\write_batch.cc" />
-    <ClCompile Include="..\..\..\src\leveldb\db\write_batch_test.cc" />
+    <ClCompile Include="..\..\..\src\leveldb\db\write_batch_test.cc">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
     <ClCompile Include="..\..\..\src\leveldb\helpers\memenv\memenv.cc" />
-    <ClCompile Include="..\..\..\src\leveldb\helpers\memenv\memenv_test.cc" />
-    <ClCompile Include="..\..\..\src\leveldb\port\port_posix.cc" />
-    <ClCompile Include="..\..\..\src\leveldb\port\port_posix_sse.cc" />
+    <ClCompile Include="..\..\..\src\leveldb\helpers\memenv\memenv_test.cc">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\leveldb\port\port_posix.cc">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\leveldb\port\port_posix_sse.cc">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+    </ClCompile>
     <ClCompile Include="..\..\..\src\leveldb\port\port_win.cc" />
     <ClCompile Include="..\..\..\src\leveldb\table\block.cc" />
     <ClCompile Include="..\..\..\src\leveldb\table\block_builder.cc" />
     <ClCompile Include="..\..\..\src\leveldb\table\filter_block.cc" />
-    <ClCompile Include="..\..\..\src\leveldb\table\filter_block_test.cc" />
+    <ClCompile Include="..\..\..\src\leveldb\table\filter_block_test.cc">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
     <ClCompile Include="..\..\..\src\leveldb\table\format.cc" />
     <ClCompile Include="..\..\..\src\leveldb\table\iterator.cc" />
     <ClCompile Include="..\..\..\src\leveldb\table\merger.cc" />
     <ClCompile Include="..\..\..\src\leveldb\table\table.cc" />
     <ClCompile Include="..\..\..\src\leveldb\table\table_builder.cc" />
-    <ClCompile Include="..\..\..\src\leveldb\table\table_test.cc" />
+    <ClCompile Include="..\..\..\src\leveldb\table\table_test.cc">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
     <ClCompile Include="..\..\..\src\leveldb\table\two_level_iterator.cc" />
     <ClCompile Include="..\..\..\src\leveldb\util\arena.cc" />
-    <ClCompile Include="..\..\..\src\leveldb\util\arena_test.cc" />
+    <ClCompile Include="..\..\..\src\leveldb\util\arena_test.cc">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
     <ClCompile Include="..\..\..\src\leveldb\util\bloom.cc" />
-    <ClCompile Include="..\..\..\src\leveldb\util\bloom_test.cc" />
+    <ClCompile Include="..\..\..\src\leveldb\util\bloom_test.cc">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
     <ClCompile Include="..\..\..\src\leveldb\util\cache.cc" />
-    <ClCompile Include="..\..\..\src\leveldb\util\cache_test.cc" />
+    <ClCompile Include="..\..\..\src\leveldb\util\cache_test.cc">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
     <ClCompile Include="..\..\..\src\leveldb\util\coding.cc" />
-    <ClCompile Include="..\..\..\src\leveldb\util\coding_test.cc" />
+    <ClCompile Include="..\..\..\src\leveldb\util\coding_test.cc">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
     <ClCompile Include="..\..\..\src\leveldb\util\comparator.cc" />
     <ClCompile Include="..\..\..\src\leveldb\util\crc32c.cc" />
-    <ClCompile Include="..\..\..\src\leveldb\util\crc32c_test.cc" />
+    <ClCompile Include="..\..\..\src\leveldb\util\crc32c_test.cc">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
     <ClCompile Include="..\..\..\src\leveldb\util\env.cc" />
-    <ClCompile Include="..\..\..\src\leveldb\util\env_posix.cc" />
-    <ClCompile Include="..\..\..\src\leveldb\util\env_posix_test.cc" />
-    <ClCompile Include="..\..\..\src\leveldb\util\env_test.cc" />
+    <ClCompile Include="..\..\..\src\leveldb\util\env_posix.cc">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\leveldb\util\env_posix_test.cc">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\leveldb\util\env_test.cc">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
     <ClCompile Include="..\..\..\src\leveldb\util\env_win.cc" />
     <ClCompile Include="..\..\..\src\leveldb\util\filter_policy.cc" />
     <ClCompile Include="..\..\..\src\leveldb\util\hash.cc" />
-    <ClCompile Include="..\..\..\src\leveldb\util\hash_test.cc" />
+    <ClCompile Include="..\..\..\src\leveldb\util\hash_test.cc">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
     <ClCompile Include="..\..\..\src\leveldb\util\histogram.cc" />
     <ClCompile Include="..\..\..\src\leveldb\util\logging.cc" />
     <ClCompile Include="..\..\..\src\leveldb\util\options.cc" />
     <ClCompile Include="..\..\..\src\leveldb\util\status.cc" />
-    <ClCompile Include="..\..\..\src\leveldb\util\testharness.cc" />
-    <ClCompile Include="..\..\..\src\leveldb\util\testutil.cc" />
-    <ClCompile Include="leveldb.cpp" />
+    <ClCompile Include="..\..\..\src\leveldb\util\testharness.cc">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\leveldb\util\testutil.cc">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="leveldb_main.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
     <ClCompile Include="stdafx.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

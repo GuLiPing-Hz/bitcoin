@@ -103,6 +103,21 @@ void AutoCompactTest::DoReads(int n) {
   ASSERT_GE(final_other_size, initial_other_size/5 - 1048576);
 }
 
+/*
+class _Test_ReadAll : public AutoCompactTest{
+public:                                                                
+	void _Run();
+	static void _RunIt(){
+		_Test_ReadAll t;                                             
+		t._Run();                                                           
+}                                                                     
+};                                                                      
+bool _Test_ignored_ReadAll = ::leveldb::test::RegisterTest("AutoCompactTest", "ReadAll", &_Test_ReadAll::_RunIt); 
+void _Test_ReadAll::_Run(){
+	DoReads(kCount);
+}
+*/
+
 TEST(AutoCompactTest, ReadAll) {
   DoReads(kCount);
 }

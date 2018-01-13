@@ -57,7 +57,7 @@
 #endif
 
 // win32
-#if defined(_WIN32) && defined(_WINDOWS)
+#if defined(_WIN32) || defined(_WIN64)
 #undef  CFG_TARGET_PLATFORM
 #define CFG_TARGET_PLATFORM         CC_PLATFORM_WIN32
 #endif
@@ -126,7 +126,7 @@ void SetLogLevel(int level);//设置打印等级 默认LOG_LEVEL_ALL
 void SetLogToFile(const char* path);
 //打印日志
 void Printf(int level, const char* file, long line, const char* format, ...);
-void PrintConsole(const char* log,int level = LOG_LEVEL_ALL);
+void PrintConsole(const char* log, int level = LOG_LEVEL_ALL);
 
 // VERBOSE
 #define LOGV(...) Printf(0,__FILE__,__LINE__,__VA_ARGS__)
