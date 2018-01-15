@@ -222,6 +222,9 @@
     <ClInclude Include="..\wrap_config.h">
       <Filter>win</Filter>
     </ClInclude>
+    <ClInclude Include="..\funcs.h">
+      <Filter>win</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -442,6 +445,9 @@
     </ClCompile>
     <ClCompile Include="leveldb_main.cpp">
       <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\funcs.cpp">
+      <Filter>win</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

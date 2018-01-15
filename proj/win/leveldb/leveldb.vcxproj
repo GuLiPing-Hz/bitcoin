@@ -137,13 +137,14 @@
     <ClInclude Include="..\..\..\src\leveldb\util\random.h" />
     <ClInclude Include="..\..\..\src\leveldb\util\testharness.h" />
     <ClInclude Include="..\..\..\src\leveldb\util\testutil.h" />
+    <ClInclude Include="..\funcs.h" />
     <ClInclude Include="..\wrap_config.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\..\src\leveldb\db\autocompact_test.cc">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
     </ClCompile>
     <ClCompile Include="..\..\..\src\leveldb\db\builder.cc" />
     <ClCompile Include="..\..\..\src\leveldb\db\c.cc" />
@@ -275,8 +276,9 @@
     <ClCompile Include="..\..\..\src\leveldb\util\testutil.cc">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
     </ClCompile>
+    <ClCompile Include="..\funcs.cpp" />
     <ClCompile Include="leveldb_main.cpp">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
     </ClCompile>
     <ClCompile Include="stdafx.cpp" />
   </ItemGroup>

@@ -3,7 +3,7 @@
 #include <sstream>
 #include <time.h>
 #include <stdint.h>
-#include "pool.h"
+//#include "pool.h"
 
 #ifdef _WIN32
 #include <windows.h>
@@ -14,8 +14,8 @@
 
 #endif
 
-Wrap::Allocator *Wrap::Allocator::sIns = NULL;
-Wrap::PoolMgr *Wrap::PoolMgr::sIns = NULL;
+// Wrap::Allocator *Wrap::Allocator::sIns = NULL;
+// Wrap::PoolMgr *Wrap::PoolMgr::sIns = NULL;
 
 static std::string sPath;
 static int sLevel = 0;

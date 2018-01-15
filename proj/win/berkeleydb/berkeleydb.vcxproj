@@ -1,0 +1,458 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{5F4660CB-B16E-46DC-9DB5-55B2AE872330}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>berkeleydb</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\src\berkeleydb\crypto\rijndael\rijndael-alg-fst.h" />
+    <ClInclude Include="..\..\..\src\berkeleydb\crypto\rijndael\rijndael-api-fst.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\src\berkeleydb\blob\blob_fileops.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\blob\blob_page.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\blob\blob_stream.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\blob\blob_util.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\btree\btree_auto.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\btree\btree_autop.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\btree\bt_compact.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\btree\bt_compare.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\btree\bt_compress.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\btree\bt_conv.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\btree\bt_curadj.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\btree\bt_cursor.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\btree\bt_delete.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\btree\bt_method.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\btree\bt_open.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\btree\bt_put.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\btree\bt_rec.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\btree\bt_reclaim.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\btree\bt_recno.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\btree\bt_rsearch.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\btree\bt_search.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\btree\bt_split.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\btree\bt_stat.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\btree\bt_upgrade.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\btree\bt_verify.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\clib\atoi.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\clib\atol.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\clib\bsearch.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\clib\getcwd.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\clib\getopt.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\clib\isalpha.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\clib\isdigit.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\clib\isprint.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\clib\isspace.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\clib\memcmp.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\clib\memmove.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\clib\printf.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\clib\qsort.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\clib\raise.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\clib\rand.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\clib\snprintf.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\clib\strcasecmp.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\clib\strcat.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\clib\strchr.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\clib\strdup.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\clib\strerror.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\clib\strncat.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\clib\strncmp.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\clib\strrchr.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\clib\strsep.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\clib\strtol.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\clib\strtoul.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\clib\time.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\common\clock.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\common\crypto_stub.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\common\dbt.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\common\db_byteorder.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\common\db_compint.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\common\db_err.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\common\db_getlong.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\common\db_idspace.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\common\db_log2.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\common\db_shash.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\common\mkpath.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\common\openflags.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\common\os_method.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\common\util_arg.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\common\util_cache.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\common\util_env.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\common\util_log.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\common\util_sig.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\common\util_ver_check.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\common\zerofill.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\crypto\crypto.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\crypto\rijndael\rijndael-alg-fst.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\crypto\rijndael\rijndael-api-fst.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\dbreg\dbreg.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\dbreg\dbreg_auto.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\dbreg\dbreg_autop.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\dbreg\dbreg_rec.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\dbreg\dbreg_stat.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\dbreg\dbreg_util.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\db\crdel_auto.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\db\crdel_autop.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\db\crdel_rec.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\db\db.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\db\db_am.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\db\db_auto.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\db\db_autop.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\db\db_backup.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\db\db_cam.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\db\db_cds.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\db\db_compact.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\db\db_conv.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\db\db_copy.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\db\db_dispatch.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\db\db_dup.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\db\db_iface.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\db\db_join.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\db\db_meta.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\db\db_method.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\db\db_open.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\db\db_overflow.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\db\db_ovfl_vrfy.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\db\db_pr.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\db\db_rec.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\db\db_reclaim.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\db\db_remove.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\db\db_rename.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\db\db_ret.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\db\db_setid.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\db\db_setlsn.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\db\db_slice.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\db\db_sort_multiple.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\db\db_stati.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\db\db_truncate.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\db\db_upg.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\db\db_upg_opd.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\db\db_vrfy.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\db\db_vrfyutil.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\db\db_vrfy_stub.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\db\partition.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\env\env_alloc.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\env\env_backup.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\env\env_config.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\env\env_failchk.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\env\env_file.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\env\env_globals.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\env\env_method.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\env\env_name.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\env\env_open.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\env\env_recover.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\env\env_region.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\env\env_register.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\env\env_sig.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\env\env_slice.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\env\env_stat.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\fileops\fileops_auto.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\fileops\fileops_autop.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\fileops\fop_basic.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\fileops\fop_rec.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\fileops\fop_util.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\hash\hash.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\hash\hash_auto.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\hash\hash_autop.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\hash\hash_compact.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\hash\hash_conv.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\hash\hash_dup.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\hash\hash_func.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\hash\hash_meta.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\hash\hash_method.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\hash\hash_open.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\hash\hash_page.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\hash\hash_rec.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\hash\hash_reclaim.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\hash\hash_stat.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\hash\hash_stub.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\hash\hash_upgrade.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\hash\hash_verify.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\heap\heap.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\heap\heap_auto.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\heap\heap_autop.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\heap\heap_backup.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\heap\heap_conv.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\heap\heap_method.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\heap\heap_open.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\heap\heap_rec.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\heap\heap_reclaim.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\heap\heap_stat.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\heap\heap_stub.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\heap\heap_upgrade.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\heap\heap_verify.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\hmac\hmac.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\hmac\sha1.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\lock\lock.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\lock\lock_deadlock.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\lock\lock_failchk.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\lock\lock_id.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\lock\lock_list.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\lock\lock_method.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\lock\lock_region.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\lock\lock_stat.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\lock\lock_stub.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\lock\lock_timer.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\lock\lock_util.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\log\log.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\log\log_archive.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\log\log_compare.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\log\log_debug.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\log\log_get.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\log\log_method.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\log\log_print.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\log\log_put.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\log\log_stat.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\log\log_verify.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\log\log_verify_auto.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\log\log_verify_int.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\log\log_verify_stub.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\log\log_verify_util.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\mp\mp_alloc.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\mp\mp_backup.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\mp\mp_bh.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\mp\mp_fget.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\mp\mp_fmethod.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\mp\mp_fopen.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\mp\mp_fput.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\mp\mp_fset.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\mp\mp_method.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\mp\mp_mvcc.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\mp\mp_region.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\mp\mp_register.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\mp\mp_resize.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\mp\mp_stat.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\mp\mp_sync.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\mp\mp_trickle.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\mutex\mut_alloc.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\mutex\mut_failchk.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\mutex\mut_method.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\mutex\mut_pthread.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\mutex\mut_region.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\mutex\mut_stat.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\mutex\mut_stub.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\mutex\mut_tas.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\mutex\mut_win32.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\mutex\test_mutex.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\os\os_abort.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\os\os_abs.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\os\os_addrinfo.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\os\os_alloc.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\os\os_clock.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\os\os_config.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\os\os_cpu.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\os\os_ctime.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\os\os_dir.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\os\os_errno.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\os\os_fid.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\os\os_flock.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\os\os_fsync.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\os\os_getenv.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\os\os_handle.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\os\os_map.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\os\os_mkdir.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\os\os_open.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\os\os_path.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\os\os_pid.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\os\os_rename.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\os\os_rmdir.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\os\os_root.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\os\os_rpath.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\os\os_rw.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\os\os_seek.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\os\os_stack.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\os\os_stat.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\os\os_tmpdir.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\os\os_truncate.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\os\os_uid.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\os\os_unlink.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\os\os_yield.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\os_windows\ce_ctime.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\os_windows\ce_freopen.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\os_windows\ce_gmtime.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\os_windows\ce_localtime.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\os_windows\ce_mktime.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\os_windows\ce_remove.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\os_windows\ce_util_sig.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\os_windows\os_abs.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\os_windows\os_clock.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\os_windows\os_config.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\os_windows\os_cpu.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\os_windows\os_dir.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\os_windows\os_errno.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\os_windows\os_fid.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\os_windows\os_flock.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\os_windows\os_fsync.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\os_windows\os_getenv.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\os_windows\os_handle.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\os_windows\os_map.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\os_windows\os_mkdir.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\os_windows\os_open.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\os_windows\os_rename.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\os_windows\os_rmdir.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\os_windows\os_rw.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\os_windows\os_seek.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\os_windows\os_stat.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\os_windows\os_truncate.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\os_windows\os_unlink.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\os_windows\os_yield.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\qam\qam.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\qam\qam_auto.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\qam\qam_autop.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\qam\qam_conv.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\qam\qam_files.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\qam\qam_method.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\qam\qam_open.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\qam\qam_rec.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\qam\qam_stat.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\qam\qam_stub.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\qam\qam_upgrade.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\qam\qam_verify.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\repmgr\repmgr_auto.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\repmgr\repmgr_automsg.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\repmgr\repmgr_autop.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\repmgr\repmgr_elect.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\repmgr\repmgr_method.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\repmgr\repmgr_msg.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\repmgr\repmgr_net.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\repmgr\repmgr_posix.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\repmgr\repmgr_queue.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\repmgr\repmgr_rec.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\repmgr\repmgr_sel.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\repmgr\repmgr_stat.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\repmgr\repmgr_stub.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\repmgr\repmgr_util.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\repmgr\repmgr_windows.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\rep\rep_automsg.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\rep\rep_backup.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\rep\rep_elect.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\rep\rep_lease.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\rep\rep_log.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\rep\rep_method.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\rep\rep_record.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\rep\rep_region.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\rep\rep_stat.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\rep\rep_stub.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\rep\rep_util.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\rep\rep_verify.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\sequence\sequence.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\sequence\seq_stat.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\txn\txn.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\txn\txn_auto.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\txn\txn_autop.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\txn\txn_chkpt.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\txn\txn_failchk.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\txn\txn_method.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\txn\txn_rec.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\txn\txn_recover.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\txn\txn_region.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\txn\txn_stat.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\txn\txn_util.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\xa\xa.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\xa\xa_map.c" />
+    <ClCompile Include="..\..\..\src\lang\cxx\cxx_channel.cpp" />
+    <ClCompile Include="..\..\..\src\lang\cxx\cxx_db.cpp" />
+    <ClCompile Include="..\..\..\src\lang\cxx\cxx_dbc.cpp" />
+    <ClCompile Include="..\..\..\src\lang\cxx\cxx_dbstream.cpp" />
+    <ClCompile Include="..\..\..\src\lang\cxx\cxx_dbt.cpp" />
+    <ClCompile Include="..\..\..\src\lang\cxx\cxx_env.cpp" />
+    <ClCompile Include="..\..\..\src\lang\cxx\cxx_except.cpp" />
+    <ClCompile Include="..\..\..\src\lang\cxx\cxx_lock.cpp" />
+    <ClCompile Include="..\..\..\src\lang\cxx\cxx_logc.cpp" />
+    <ClCompile Include="..\..\..\src\lang\cxx\cxx_mpool.cpp" />
+    <ClCompile Include="..\..\..\src\lang\cxx\cxx_multi.cpp" />
+    <ClCompile Include="..\..\..\src\lang\cxx\cxx_rid.cpp" />
+    <ClCompile Include="..\..\..\src\lang\cxx\cxx_seq.cpp" />
+    <ClCompile Include="..\..\..\src\lang\cxx\cxx_site.cpp" />
+    <ClCompile Include="..\..\..\src\lang\cxx\cxx_txn.cpp" />
+    <ClCompile Include="..\..\..\src\lang\dbm\dbm.c" />
+    <ClCompile Include="..\..\..\src\lang\hsearch\hsearch.c" />
+    <ClCompile Include="berkeleydb.cpp" />
+    <ClCompile Include="stdafx.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\src\berkeleydb\btree\btree.src" />
+    <None Include="..\..\..\src\berkeleydb\mutex\uts4_cc.s" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

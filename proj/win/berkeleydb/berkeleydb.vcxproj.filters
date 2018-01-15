@@ -1,0 +1,1214 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{c2dc14ca-76aa-4744-8839-fbc3b08d83f1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lang">
+      <UniqueIdentifier>{b2fbbb74-7dac-4f8b-ba70-2b6624163191}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lang\cxx">
+      <UniqueIdentifier>{abd448a8-fc3a-4d4b-b055-533fd9c08ac7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lang\dbm">
+      <UniqueIdentifier>{293d4ffa-53f8-4419-920e-b601f29eeb40}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lang\hsearch">
+      <UniqueIdentifier>{0ddcb84c-2c90-40cc-9b3b-fcd8d92f0eab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\os">
+      <UniqueIdentifier>{185fadd3-9448-4329-a0ba-614f57a7b59c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\os_windows">
+      <UniqueIdentifier>{f2c9279b-d3c5-4a6f-8404-aebb31fa4daf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\qam">
+      <UniqueIdentifier>{6d1fec4d-1fac-454f-bdc8-aae3a2238578}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\rep">
+      <UniqueIdentifier>{7139377b-68f3-4a6e-b91e-1325e744e212}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\repmgr">
+      <UniqueIdentifier>{38005e69-4408-4e48-b19c-d3c557a8f26c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\blob">
+      <UniqueIdentifier>{c70578d6-bf0b-4222-8105-6932163a4e6a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\btree">
+      <UniqueIdentifier>{1f5a70e0-3bbb-49de-bec4-5972b79a245a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\clib">
+      <UniqueIdentifier>{03f3adbd-34db-4f2d-934d-4447f397bb3a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\common">
+      <UniqueIdentifier>{28314fdb-b688-4a40-9cc1-dc4e5a87d426}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\crypto">
+      <UniqueIdentifier>{ede85eef-eacf-4709-a0eb-6ac0b296f043}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\crypto\rijndael">
+      <UniqueIdentifier>{987e6de7-d087-416c-982e-e0b8e038a1dd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\db">
+      <UniqueIdentifier>{b794d106-721b-4e54-896b-df4c9b64a211}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\dbreg">
+      <UniqueIdentifier>{d5914cd3-b506-4a6c-9f6a-13f8a304473b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\env">
+      <UniqueIdentifier>{06e177b3-62bb-4ae4-b4ed-4aa3cd4277ef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\fileops">
+      <UniqueIdentifier>{32e231c4-db85-4198-bd90-22d96361d151}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\hash">
+      <UniqueIdentifier>{b8f3af10-4fde-447c-9af8-aaf0f37fe807}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\heap">
+      <UniqueIdentifier>{b10bacbf-ceaa-4842-8b67-648e2e8cf809}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\hmac">
+      <UniqueIdentifier>{f7bae010-1736-455d-9916-e8964f1c7955}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\lock">
+      <UniqueIdentifier>{32b41419-b501-4bb9-aecf-f339f5d27833}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\log">
+      <UniqueIdentifier>{4609cea2-5af5-432e-9760-e4a370e1e507}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\mp">
+      <UniqueIdentifier>{bcb739d4-e8a3-4e42-b143-50a4233c20a7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\mutex">
+      <UniqueIdentifier>{2b7c25dc-0229-48c1-9cc6-19311b3b1756}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\sequence">
+      <UniqueIdentifier>{06a2ab61-9935-4d6d-aced-178221431359}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\txn">
+      <UniqueIdentifier>{5f22047b-9428-4c13-8827-2ffc90b9615c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\xa">
+      <UniqueIdentifier>{64e620c3-15d2-4608-8c5a-606f7acff894}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\berkeleydb\crypto\rijndael\rijndael-api-fst.h">
+      <Filter>src\crypto\rijndael</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\berkeleydb\crypto\rijndael\rijndael-alg-fst.h">
+      <Filter>src\crypto\rijndael</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="berkeleydb.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\blob\blob_page.c">
+      <Filter>src\blob</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\blob\blob_stream.c">
+      <Filter>src\blob</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\blob\blob_util.c">
+      <Filter>src\blob</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\blob\blob_fileops.c">
+      <Filter>src\blob</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\btree\bt_compare.c">
+      <Filter>src\btree</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\btree\bt_compress.c">
+      <Filter>src\btree</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\btree\bt_conv.c">
+      <Filter>src\btree</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\btree\bt_curadj.c">
+      <Filter>src\btree</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\btree\bt_cursor.c">
+      <Filter>src\btree</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\btree\bt_delete.c">
+      <Filter>src\btree</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\btree\bt_method.c">
+      <Filter>src\btree</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\btree\bt_open.c">
+      <Filter>src\btree</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\btree\bt_put.c">
+      <Filter>src\btree</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\btree\bt_rec.c">
+      <Filter>src\btree</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\btree\bt_reclaim.c">
+      <Filter>src\btree</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\btree\bt_recno.c">
+      <Filter>src\btree</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\btree\bt_rsearch.c">
+      <Filter>src\btree</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\btree\bt_search.c">
+      <Filter>src\btree</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\btree\bt_split.c">
+      <Filter>src\btree</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\btree\bt_stat.c">
+      <Filter>src\btree</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\btree\bt_upgrade.c">
+      <Filter>src\btree</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\btree\bt_verify.c">
+      <Filter>src\btree</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\btree\btree_auto.c">
+      <Filter>src\btree</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\btree\btree_autop.c">
+      <Filter>src\btree</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\btree\bt_compact.c">
+      <Filter>src\btree</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\crypto\crypto.c">
+      <Filter>src\crypto</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\lang\cxx\cxx_dbt.cpp">
+      <Filter>lang\cxx</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\lang\cxx\cxx_env.cpp">
+      <Filter>lang\cxx</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\lang\cxx\cxx_except.cpp">
+      <Filter>lang\cxx</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\lang\cxx\cxx_lock.cpp">
+      <Filter>lang\cxx</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\lang\cxx\cxx_logc.cpp">
+      <Filter>lang\cxx</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\lang\cxx\cxx_mpool.cpp">
+      <Filter>lang\cxx</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\lang\cxx\cxx_multi.cpp">
+      <Filter>lang\cxx</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\lang\cxx\cxx_rid.cpp">
+      <Filter>lang\cxx</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\lang\cxx\cxx_seq.cpp">
+      <Filter>lang\cxx</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\lang\cxx\cxx_site.cpp">
+      <Filter>lang\cxx</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\lang\cxx\cxx_txn.cpp">
+      <Filter>lang\cxx</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\lang\cxx\cxx_channel.cpp">
+      <Filter>lang\cxx</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\lang\cxx\cxx_db.cpp">
+      <Filter>lang\cxx</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\lang\cxx\cxx_dbc.cpp">
+      <Filter>lang\cxx</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\lang\cxx\cxx_dbstream.cpp">
+      <Filter>lang\cxx</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\db\crdel_autop.c">
+      <Filter>src\db</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\db\crdel_rec.c">
+      <Filter>src\db</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\db\db.c">
+      <Filter>src\db</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\db\db_am.c">
+      <Filter>src\db</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\db\db_auto.c">
+      <Filter>src\db</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\db\db_autop.c">
+      <Filter>src\db</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\db\db_backup.c">
+      <Filter>src\db</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\db\db_cam.c">
+      <Filter>src\db</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\db\db_cds.c">
+      <Filter>src\db</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\db\db_compact.c">
+      <Filter>src\db</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\db\db_conv.c">
+      <Filter>src\db</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\db\db_copy.c">
+      <Filter>src\db</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\db\db_dispatch.c">
+      <Filter>src\db</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\db\db_dup.c">
+      <Filter>src\db</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\db\db_iface.c">
+      <Filter>src\db</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\db\db_join.c">
+      <Filter>src\db</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\db\db_meta.c">
+      <Filter>src\db</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\db\db_method.c">
+      <Filter>src\db</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\db\db_open.c">
+      <Filter>src\db</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\db\db_overflow.c">
+      <Filter>src\db</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\db\db_ovfl_vrfy.c">
+      <Filter>src\db</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\db\db_pr.c">
+      <Filter>src\db</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\db\db_rec.c">
+      <Filter>src\db</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\db\db_reclaim.c">
+      <Filter>src\db</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\db\db_remove.c">
+      <Filter>src\db</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\db\db_rename.c">
+      <Filter>src\db</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\db\db_ret.c">
+      <Filter>src\db</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\db\db_setid.c">
+      <Filter>src\db</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\db\db_setlsn.c">
+      <Filter>src\db</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\db\db_slice.c">
+      <Filter>src\db</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\db\db_sort_multiple.c">
+      <Filter>src\db</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\db\db_stati.c">
+      <Filter>src\db</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\db\db_truncate.c">
+      <Filter>src\db</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\db\db_upg.c">
+      <Filter>src\db</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\db\db_upg_opd.c">
+      <Filter>src\db</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\db\db_vrfy.c">
+      <Filter>src\db</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\db\db_vrfy_stub.c">
+      <Filter>src\db</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\db\db_vrfyutil.c">
+      <Filter>src\db</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\db\partition.c">
+      <Filter>src\db</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\db\crdel_auto.c">
+      <Filter>src\db</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\common\db_compint.c">
+      <Filter>src\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\common\db_err.c">
+      <Filter>src\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\common\db_getlong.c">
+      <Filter>src\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\common\db_idspace.c">
+      <Filter>src\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\common\db_log2.c">
+      <Filter>src\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\common\db_shash.c">
+      <Filter>src\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\common\dbt.c">
+      <Filter>src\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\common\mkpath.c">
+      <Filter>src\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\common\openflags.c">
+      <Filter>src\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\common\os_method.c">
+      <Filter>src\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\common\util_arg.c">
+      <Filter>src\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\common\util_cache.c">
+      <Filter>src\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\common\util_env.c">
+      <Filter>src\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\common\util_log.c">
+      <Filter>src\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\common\util_sig.c">
+      <Filter>src\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\common\util_ver_check.c">
+      <Filter>src\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\common\zerofill.c">
+      <Filter>src\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\common\clock.c">
+      <Filter>src\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\common\crypto_stub.c">
+      <Filter>src\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\common\db_byteorder.c">
+      <Filter>src\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\lang\dbm\dbm.c">
+      <Filter>lang\dbm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\dbreg\dbreg_autop.c">
+      <Filter>src\dbreg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\dbreg\dbreg_rec.c">
+      <Filter>src\dbreg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\dbreg\dbreg_stat.c">
+      <Filter>src\dbreg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\dbreg\dbreg_util.c">
+      <Filter>src\dbreg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\dbreg\dbreg.c">
+      <Filter>src\dbreg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\dbreg\dbreg_auto.c">
+      <Filter>src\dbreg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\env\env_config.c">
+      <Filter>src\env</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\env\env_failchk.c">
+      <Filter>src\env</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\env\env_file.c">
+      <Filter>src\env</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\env\env_globals.c">
+      <Filter>src\env</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\env\env_method.c">
+      <Filter>src\env</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\env\env_name.c">
+      <Filter>src\env</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\env\env_open.c">
+      <Filter>src\env</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\env\env_recover.c">
+      <Filter>src\env</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\env\env_region.c">
+      <Filter>src\env</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\env\env_register.c">
+      <Filter>src\env</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\env\env_sig.c">
+      <Filter>src\env</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\env\env_slice.c">
+      <Filter>src\env</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\env\env_stat.c">
+      <Filter>src\env</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\env\env_alloc.c">
+      <Filter>src\env</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\env\env_backup.c">
+      <Filter>src\env</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\fileops\fileops_auto.c">
+      <Filter>src\fileops</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\fileops\fileops_autop.c">
+      <Filter>src\fileops</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\fileops\fop_basic.c">
+      <Filter>src\fileops</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\fileops\fop_rec.c">
+      <Filter>src\fileops</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\fileops\fop_util.c">
+      <Filter>src\fileops</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\hash\hash_conv.c">
+      <Filter>src\hash</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\hash\hash_dup.c">
+      <Filter>src\hash</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\hash\hash_func.c">
+      <Filter>src\hash</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\hash\hash_meta.c">
+      <Filter>src\hash</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\hash\hash_method.c">
+      <Filter>src\hash</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\hash\hash_open.c">
+      <Filter>src\hash</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\hash\hash_page.c">
+      <Filter>src\hash</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\hash\hash_rec.c">
+      <Filter>src\hash</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\hash\hash_reclaim.c">
+      <Filter>src\hash</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\hash\hash_stat.c">
+      <Filter>src\hash</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\hash\hash_stub.c">
+      <Filter>src\hash</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\hash\hash_upgrade.c">
+      <Filter>src\hash</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\hash\hash_verify.c">
+      <Filter>src\hash</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\hash\hash.c">
+      <Filter>src\hash</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\hash\hash_auto.c">
+      <Filter>src\hash</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\hash\hash_autop.c">
+      <Filter>src\hash</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\hash\hash_compact.c">
+      <Filter>src\hash</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\heap\heap_conv.c">
+      <Filter>src\heap</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\heap\heap_method.c">
+      <Filter>src\heap</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\heap\heap_open.c">
+      <Filter>src\heap</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\heap\heap_rec.c">
+      <Filter>src\heap</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\heap\heap_reclaim.c">
+      <Filter>src\heap</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\heap\heap_stat.c">
+      <Filter>src\heap</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\heap\heap_stub.c">
+      <Filter>src\heap</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\heap\heap_upgrade.c">
+      <Filter>src\heap</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\heap\heap_verify.c">
+      <Filter>src\heap</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\heap\heap.c">
+      <Filter>src\heap</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\heap\heap_auto.c">
+      <Filter>src\heap</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\heap\heap_autop.c">
+      <Filter>src\heap</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\heap\heap_backup.c">
+      <Filter>src\heap</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\hmac\hmac.c">
+      <Filter>src\hmac</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\hmac\sha1.c">
+      <Filter>src\hmac</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\clib\isdigit.c">
+      <Filter>src\clib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\clib\isprint.c">
+      <Filter>src\clib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\clib\isspace.c">
+      <Filter>src\clib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\clib\memcmp.c">
+      <Filter>src\clib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\clib\memmove.c">
+      <Filter>src\clib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\clib\printf.c">
+      <Filter>src\clib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\clib\qsort.c">
+      <Filter>src\clib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\clib\raise.c">
+      <Filter>src\clib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\clib\rand.c">
+      <Filter>src\clib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\clib\snprintf.c">
+      <Filter>src\clib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\clib\strcasecmp.c">
+      <Filter>src\clib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\clib\strcat.c">
+      <Filter>src\clib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\clib\strchr.c">
+      <Filter>src\clib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\clib\strdup.c">
+      <Filter>src\clib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\clib\strerror.c">
+      <Filter>src\clib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\clib\strncat.c">
+      <Filter>src\clib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\clib\strncmp.c">
+      <Filter>src\clib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\clib\strrchr.c">
+      <Filter>src\clib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\clib\strsep.c">
+      <Filter>src\clib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\clib\strtol.c">
+      <Filter>src\clib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\clib\strtoul.c">
+      <Filter>src\clib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\clib\time.c">
+      <Filter>src\clib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\clib\atoi.c">
+      <Filter>src\clib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\clib\atol.c">
+      <Filter>src\clib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\clib\bsearch.c">
+      <Filter>src\clib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\clib\getcwd.c">
+      <Filter>src\clib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\clib\getopt.c">
+      <Filter>src\clib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\clib\isalpha.c">
+      <Filter>src\clib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\lock\lock_list.c">
+      <Filter>src\lock</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\lock\lock_method.c">
+      <Filter>src\lock</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\lock\lock_region.c">
+      <Filter>src\lock</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\lock\lock_stat.c">
+      <Filter>src\lock</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\lock\lock_stub.c">
+      <Filter>src\lock</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\lock\lock_timer.c">
+      <Filter>src\lock</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\lock\lock_util.c">
+      <Filter>src\lock</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\lock\lock.c">
+      <Filter>src\lock</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\lock\lock_deadlock.c">
+      <Filter>src\lock</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\lock\lock_failchk.c">
+      <Filter>src\lock</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\lock\lock_id.c">
+      <Filter>src\lock</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\log\log_print.c">
+      <Filter>src\log</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\log\log_put.c">
+      <Filter>src\log</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\log\log_stat.c">
+      <Filter>src\log</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\log\log_verify.c">
+      <Filter>src\log</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\log\log_verify_auto.c">
+      <Filter>src\log</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\log\log_verify_int.c">
+      <Filter>src\log</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\log\log_verify_stub.c">
+      <Filter>src\log</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\log\log_verify_util.c">
+      <Filter>src\log</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\log\log.c">
+      <Filter>src\log</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\log\log_archive.c">
+      <Filter>src\log</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\log\log_compare.c">
+      <Filter>src\log</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\log\log_debug.c">
+      <Filter>src\log</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\log\log_get.c">
+      <Filter>src\log</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\log\log_method.c">
+      <Filter>src\log</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\mp\mp_fmethod.c">
+      <Filter>src\mp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\mp\mp_fopen.c">
+      <Filter>src\mp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\mp\mp_fput.c">
+      <Filter>src\mp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\mp\mp_fset.c">
+      <Filter>src\mp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\mp\mp_method.c">
+      <Filter>src\mp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\mp\mp_mvcc.c">
+      <Filter>src\mp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\mp\mp_region.c">
+      <Filter>src\mp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\mp\mp_register.c">
+      <Filter>src\mp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\mp\mp_resize.c">
+      <Filter>src\mp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\mp\mp_stat.c">
+      <Filter>src\mp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\mp\mp_sync.c">
+      <Filter>src\mp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\mp\mp_trickle.c">
+      <Filter>src\mp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\mp\mp_alloc.c">
+      <Filter>src\mp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\mp\mp_backup.c">
+      <Filter>src\mp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\mp\mp_bh.c">
+      <Filter>src\mp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\mp\mp_fget.c">
+      <Filter>src\mp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\mutex\test_mutex.c">
+      <Filter>src\mutex</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\mutex\mut_alloc.c">
+      <Filter>src\mutex</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\mutex\mut_failchk.c">
+      <Filter>src\mutex</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\mutex\mut_method.c">
+      <Filter>src\mutex</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\mutex\mut_pthread.c">
+      <Filter>src\mutex</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\mutex\mut_region.c">
+      <Filter>src\mutex</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\mutex\mut_stat.c">
+      <Filter>src\mutex</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\mutex\mut_stub.c">
+      <Filter>src\mutex</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\mutex\mut_tas.c">
+      <Filter>src\mutex</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\mutex\mut_win32.c">
+      <Filter>src\mutex</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\os\os_rmdir.c">
+      <Filter>src\os</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\os\os_root.c">
+      <Filter>src\os</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\os\os_rpath.c">
+      <Filter>src\os</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\os\os_rw.c">
+      <Filter>src\os</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\os\os_seek.c">
+      <Filter>src\os</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\os\os_stack.c">
+      <Filter>src\os</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\os\os_stat.c">
+      <Filter>src\os</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\os\os_tmpdir.c">
+      <Filter>src\os</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\os\os_truncate.c">
+      <Filter>src\os</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\os\os_uid.c">
+      <Filter>src\os</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\os\os_unlink.c">
+      <Filter>src\os</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\os\os_yield.c">
+      <Filter>src\os</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\os\os_abort.c">
+      <Filter>src\os</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\os\os_abs.c">
+      <Filter>src\os</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\os\os_addrinfo.c">
+      <Filter>src\os</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\os\os_alloc.c">
+      <Filter>src\os</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\os\os_clock.c">
+      <Filter>src\os</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\os\os_config.c">
+      <Filter>src\os</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\os\os_cpu.c">
+      <Filter>src\os</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\os\os_ctime.c">
+      <Filter>src\os</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\os\os_dir.c">
+      <Filter>src\os</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\os\os_errno.c">
+      <Filter>src\os</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\os\os_fid.c">
+      <Filter>src\os</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\os\os_flock.c">
+      <Filter>src\os</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\os\os_fsync.c">
+      <Filter>src\os</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\os\os_getenv.c">
+      <Filter>src\os</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\os\os_handle.c">
+      <Filter>src\os</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\os\os_map.c">
+      <Filter>src\os</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\os\os_mkdir.c">
+      <Filter>src\os</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\os\os_open.c">
+      <Filter>src\os</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\os\os_path.c">
+      <Filter>src\os</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\os\os_pid.c">
+      <Filter>src\os</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\os\os_rename.c">
+      <Filter>src\os</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\os_windows\os_flock.c">
+      <Filter>src\os_windows</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\os_windows\os_fsync.c">
+      <Filter>src\os_windows</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\os_windows\os_getenv.c">
+      <Filter>src\os_windows</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\os_windows\os_handle.c">
+      <Filter>src\os_windows</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\os_windows\os_map.c">
+      <Filter>src\os_windows</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\os_windows\os_mkdir.c">
+      <Filter>src\os_windows</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\os_windows\os_open.c">
+      <Filter>src\os_windows</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\os_windows\os_rename.c">
+      <Filter>src\os_windows</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\os_windows\os_rmdir.c">
+      <Filter>src\os_windows</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\os_windows\os_rw.c">
+      <Filter>src\os_windows</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\os_windows\os_seek.c">
+      <Filter>src\os_windows</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\os_windows\os_stat.c">
+      <Filter>src\os_windows</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\os_windows\os_truncate.c">
+      <Filter>src\os_windows</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\os_windows\os_unlink.c">
+      <Filter>src\os_windows</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\os_windows\os_yield.c">
+      <Filter>src\os_windows</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\os_windows\ce_ctime.c">
+      <Filter>src\os_windows</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\os_windows\ce_freopen.c">
+      <Filter>src\os_windows</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\os_windows\ce_gmtime.c">
+      <Filter>src\os_windows</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\os_windows\ce_localtime.c">
+      <Filter>src\os_windows</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\os_windows\ce_mktime.c">
+      <Filter>src\os_windows</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\os_windows\ce_remove.c">
+      <Filter>src\os_windows</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\os_windows\ce_util_sig.c">
+      <Filter>src\os_windows</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\os_windows\os_abs.c">
+      <Filter>src\os_windows</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\os_windows\os_clock.c">
+      <Filter>src\os_windows</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\os_windows\os_config.c">
+      <Filter>src\os_windows</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\os_windows\os_cpu.c">
+      <Filter>src\os_windows</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\os_windows\os_dir.c">
+      <Filter>src\os_windows</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\os_windows\os_errno.c">
+      <Filter>src\os_windows</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\os_windows\os_fid.c">
+      <Filter>src\os_windows</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\qam\qam_files.c">
+      <Filter>src\qam</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\qam\qam_method.c">
+      <Filter>src\qam</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\qam\qam_open.c">
+      <Filter>src\qam</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\qam\qam_rec.c">
+      <Filter>src\qam</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\qam\qam_stat.c">
+      <Filter>src\qam</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\qam\qam_stub.c">
+      <Filter>src\qam</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\qam\qam_upgrade.c">
+      <Filter>src\qam</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\qam\qam_verify.c">
+      <Filter>src\qam</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\qam\qam.c">
+      <Filter>src\qam</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\qam\qam_auto.c">
+      <Filter>src\qam</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\qam\qam_autop.c">
+      <Filter>src\qam</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\qam\qam_conv.c">
+      <Filter>src\qam</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\rep\rep_log.c">
+      <Filter>src\rep</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\rep\rep_method.c">
+      <Filter>src\rep</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\rep\rep_record.c">
+      <Filter>src\rep</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\rep\rep_region.c">
+      <Filter>src\rep</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\rep\rep_stat.c">
+      <Filter>src\rep</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\rep\rep_stub.c">
+      <Filter>src\rep</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\rep\rep_util.c">
+      <Filter>src\rep</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\rep\rep_verify.c">
+      <Filter>src\rep</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\rep\rep_automsg.c">
+      <Filter>src\rep</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\rep\rep_backup.c">
+      <Filter>src\rep</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\rep\rep_elect.c">
+      <Filter>src\rep</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\rep\rep_lease.c">
+      <Filter>src\rep</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\repmgr\repmgr_msg.c">
+      <Filter>src\repmgr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\repmgr\repmgr_net.c">
+      <Filter>src\repmgr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\repmgr\repmgr_posix.c">
+      <Filter>src\repmgr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\repmgr\repmgr_queue.c">
+      <Filter>src\repmgr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\repmgr\repmgr_rec.c">
+      <Filter>src\repmgr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\repmgr\repmgr_sel.c">
+      <Filter>src\repmgr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\repmgr\repmgr_stat.c">
+      <Filter>src\repmgr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\repmgr\repmgr_stub.c">
+      <Filter>src\repmgr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\repmgr\repmgr_util.c">
+      <Filter>src\repmgr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\repmgr\repmgr_windows.c">
+      <Filter>src\repmgr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\repmgr\repmgr_auto.c">
+      <Filter>src\repmgr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\repmgr\repmgr_automsg.c">
+      <Filter>src\repmgr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\repmgr\repmgr_autop.c">
+      <Filter>src\repmgr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\repmgr\repmgr_elect.c">
+      <Filter>src\repmgr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\repmgr\repmgr_method.c">
+      <Filter>src\repmgr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\crypto\rijndael\rijndael-api-fst.c">
+      <Filter>src\crypto\rijndael</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\crypto\rijndael\rijndael-alg-fst.c">
+      <Filter>src\crypto\rijndael</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\sequence\sequence.c">
+      <Filter>src\sequence</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\sequence\seq_stat.c">
+      <Filter>src\sequence</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\txn\txn_failchk.c">
+      <Filter>src\txn</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\txn\txn_method.c">
+      <Filter>src\txn</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\txn\txn_rec.c">
+      <Filter>src\txn</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\txn\txn_recover.c">
+      <Filter>src\txn</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\txn\txn_region.c">
+      <Filter>src\txn</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\txn\txn_stat.c">
+      <Filter>src\txn</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\txn\txn_util.c">
+      <Filter>src\txn</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\txn\txn.c">
+      <Filter>src\txn</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\txn\txn_auto.c">
+      <Filter>src\txn</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\txn\txn_autop.c">
+      <Filter>src\txn</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\txn\txn_chkpt.c">
+      <Filter>src\txn</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\xa\xa_map.c">
+      <Filter>src\xa</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\xa\xa.c">
+      <Filter>src\xa</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\lang\hsearch\hsearch.c">
+      <Filter>lang\hsearch</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\src\berkeleydb\btree\btree.src">
+      <Filter>src\btree</Filter>
+    </None>
+    <None Include="..\..\..\src\berkeleydb\mutex\uts4_cc.s">
+      <Filter>src\mutex</Filter>
+    </None>
+  </ItemGroup>
+</Project>
