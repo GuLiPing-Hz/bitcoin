@@ -29,6 +29,9 @@ __os_is_winnt()
 	 * avoid the overhead of repeated calls to GetVersion().
 	 */
 	if (__os_type == -1) {
+		OSVERSIONINFO osvi;
+		osvi.dwOSVersionInfoSize = sizeof(OSVERSIONINFO);
+		GetVersionEx(&osvi);
 		if ((GetVersion() & 0x80000000) == 0)
 			__os_type = 1;
 		else

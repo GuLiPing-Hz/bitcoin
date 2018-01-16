@@ -103,6 +103,12 @@
     <Filter Include="src\xa">
       <UniqueIdentifier>{64e620c3-15d2-4608-8c5a-606f7acff894}</UniqueIdentifier>
     </Filter>
+    <Filter Include="src\windows">
+      <UniqueIdentifier>{3b90c8b8-c148-47d2-8a8c-acdaa1e06988}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\dbinc">
+      <UniqueIdentifier>{4ac76309-97f6-4489-ae50-93e4f6a5084e}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Text Include="ReadMe.txt" />
@@ -119,6 +125,141 @@
     </ClInclude>
     <ClInclude Include="..\..\..\src\berkeleydb\crypto\rijndael\rijndael-alg-fst.h">
       <Filter>src\crypto\rijndael</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\berkeleydb\windows\db_cxx.h">
+      <Filter>src\windows</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\berkeleydb\windows\db_int.h">
+      <Filter>src\windows</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\berkeleydb\windows\dbstl_common.h">
+      <Filter>src\windows</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\berkeleydb\windows\clib_port.h">
+      <Filter>src\windows</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\berkeleydb\windows\db.h">
+      <Filter>src\windows</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\berkeleydb\windows\db_config.h">
+      <Filter>src\windows</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\sdk\db-6.2.32\src\dbinc\os.h">
+      <Filter>src\dbinc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\sdk\db-6.2.32\src\dbinc\partition.h">
+      <Filter>src\dbinc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\sdk\db-6.2.32\src\dbinc\perfmon.h">
+      <Filter>src\dbinc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\sdk\db-6.2.32\src\dbinc\qam.h">
+      <Filter>src\dbinc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\sdk\db-6.2.32\src\dbinc\queue.h">
+      <Filter>src\dbinc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\sdk\db-6.2.32\src\dbinc\region.h">
+      <Filter>src\dbinc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\sdk\db-6.2.32\src\dbinc\rep.h">
+      <Filter>src\dbinc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\sdk\db-6.2.32\src\dbinc\repmgr.h">
+      <Filter>src\dbinc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\sdk\db-6.2.32\src\dbinc\shqueue.h">
+      <Filter>src\dbinc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\sdk\db-6.2.32\src\dbinc\slice.h">
+      <Filter>src\dbinc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\sdk\db-6.2.32\src\dbinc\tcl_db.h">
+      <Filter>src\dbinc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\sdk\db-6.2.32\src\dbinc\txn.h">
+      <Filter>src\dbinc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\sdk\db-6.2.32\src\dbinc\win_db.h">
+      <Filter>src\dbinc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\sdk\db-6.2.32\src\dbinc\xa.h">
+      <Filter>src\dbinc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\sdk\db-6.2.32\src\dbinc\atomic.h">
+      <Filter>src\dbinc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\sdk\db-6.2.32\src\dbinc\blob.h">
+      <Filter>src\dbinc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\sdk\db-6.2.32\src\dbinc\btree.h">
+      <Filter>src\dbinc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\sdk\db-6.2.32\src\dbinc\clock.h">
+      <Filter>src\dbinc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\sdk\db-6.2.32\src\dbinc\crypto.h">
+      <Filter>src\dbinc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\sdk\db-6.2.32\src\dbinc\cxx_int.h">
+      <Filter>src\dbinc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\sdk\db-6.2.32\src\dbinc\db_am.h">
+      <Filter>src\dbinc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\sdk\db-6.2.32\src\dbinc\db_dispatch.h">
+      <Filter>src\dbinc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\sdk\db-6.2.32\src\dbinc\db_join.h">
+      <Filter>src\dbinc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\sdk\db-6.2.32\src\dbinc\db_page.h">
+      <Filter>src\dbinc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\sdk\db-6.2.32\src\dbinc\db_swap.h">
+      <Filter>src\dbinc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\sdk\db-6.2.32\src\dbinc\db_upgrade.h">
+      <Filter>src\dbinc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\sdk\db-6.2.32\src\dbinc\db_verify.h">
+      <Filter>src\dbinc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\sdk\db-6.2.32\src\dbinc\debug.h">
+      <Filter>src\dbinc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\sdk\db-6.2.32\src\dbinc\fop.h">
+      <Filter>src\dbinc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\sdk\db-6.2.32\src\dbinc\globals.h">
+      <Filter>src\dbinc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\sdk\db-6.2.32\src\dbinc\hash.h">
+      <Filter>src\dbinc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\sdk\db-6.2.32\src\dbinc\heap.h">
+      <Filter>src\dbinc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\sdk\db-6.2.32\src\dbinc\hmac.h">
+      <Filter>src\dbinc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\sdk\db-6.2.32\src\dbinc\lock.h">
+      <Filter>src\dbinc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\sdk\db-6.2.32\src\dbinc\log.h">
+      <Filter>src\dbinc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\sdk\db-6.2.32\src\dbinc\log_verify.h">
+      <Filter>src\dbinc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\sdk\db-6.2.32\src\dbinc\mp.h">
+      <Filter>src\dbinc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\sdk\db-6.2.32\src\dbinc\mutex.h">
+      <Filter>src\dbinc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\sdk\db-6.2.32\src\dbinc\mutex_int.h">
+      <Filter>src\dbinc</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -1201,6 +1342,9 @@
     </ClCompile>
     <ClCompile Include="..\..\..\src\lang\hsearch\hsearch.c">
       <Filter>lang\hsearch</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\windows\dbkill.cpp">
+      <Filter>src\windows</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

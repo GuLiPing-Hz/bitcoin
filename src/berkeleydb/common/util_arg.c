@@ -94,6 +94,10 @@ __db_util_arg_password(progname, opt_arg, passwdp)
 		return (EINVAL);
 	}
 
+#ifdef WIN32
+#define strdup _strdup
+#endif // WIN32
+
 	*passwdp = strdup(opt_arg);
 	memset(opt_arg, 0, strlen(opt_arg));
 	if (*passwdp == NULL) {
