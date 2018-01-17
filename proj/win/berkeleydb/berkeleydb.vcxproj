@@ -173,9 +173,7 @@
     <ClCompile Include="..\..\..\src\berkeleydb\clib\getopt.c">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="..\..\..\src\berkeleydb\clib\isalpha.c">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
-    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\clib\isalpha.c" />
     <ClCompile Include="..\..\..\src\berkeleydb\clib\isdigit.c">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
     </ClCompile>
@@ -262,7 +260,9 @@
     <ClCompile Include="..\..\..\src\berkeleydb\common\util_sig.c" />
     <ClCompile Include="..\..\..\src\berkeleydb\common\util_ver_check.c" />
     <ClCompile Include="..\..\..\src\berkeleydb\common\zerofill.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\crypto\aes_method.c" />
     <ClCompile Include="..\..\..\src\berkeleydb\crypto\crypto.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\crypto\mersenne\mt19937db.c" />
     <ClCompile Include="..\..\..\src\berkeleydb\crypto\rijndael\rijndael-alg-fst.c" />
     <ClCompile Include="..\..\..\src\berkeleydb\crypto\rijndael\rijndael-api-fst.c" />
     <ClCompile Include="..\..\..\src\berkeleydb\dbreg\dbreg.c" />
@@ -427,7 +427,9 @@
     </ClCompile>
     <ClCompile Include="..\..\..\src\berkeleydb\mutex\mut_tas.c" />
     <ClCompile Include="..\..\..\src\berkeleydb\mutex\mut_win32.c" />
-    <ClCompile Include="..\..\..\src\berkeleydb\mutex\test_mutex.c" />
+    <ClCompile Include="..\..\..\src\berkeleydb\mutex\test_mutex.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
     <ClCompile Include="..\..\..\src\berkeleydb\os\os_abort.c" />
     <ClCompile Include="..\..\..\src\berkeleydb\os\os_abs.c">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>

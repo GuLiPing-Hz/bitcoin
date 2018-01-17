@@ -29,10 +29,24 @@ __os_is_winnt()
 	 * avoid the overhead of repeated calls to GetVersion().
 	 */
 	if (__os_type == -1) {
-		OSVERSIONINFO osvi;
-		osvi.dwOSVersionInfoSize = sizeof(OSVERSIONINFO);
-		GetVersionEx(&osvi);
-		if ((GetVersion() & 0x80000000) == 0)
+		
+		//by glp
+		OSVERSIONINFOEX osvi;
+		DWORDLONG dwlConditionMask = 0;
+
+		//Initialize the OSVERSIONINFOEX structure.
+		ZeroMemory(&osvi, sizeof(osvi));
+		osvi.dwOSVersionInfoSize = sizeof(osvi);
+		osvi.dwMajorVersion = VER_PLATFORM_WIN32_NT;
+		//osvi.dwMinorVersion = dwMinorVersion;
+
+		//Initialize the condition mask.
+		VER_SET_CONDITION(dwlConditionMask, VER_MAJORVERSION, VER_EQUAL);
+		//VER_SET_CONDITION(dwlConditionMask, VER_MINORVERSION, VER_EQUAL);
+
+		if(VerifyVersionInfo(&osvi,VER_MAJORVERSION //| VER_MINORVERSION,
+			,dwlConditionMask))
+		//if ((GetVersion() & 0x80000000) == 0)
 			__os_type = 1;
 		else
 			__os_type = 0;
@@ -84,11 +98,12 @@ __os_fs_notzero()
 	 */
 	if (__os_notzero == -1) {
 		if (__os_is_winnt()) {
-			osvi.dwOSVersionInfoSize = sizeof(OSVERSIONINFO);
-			GetVersionEx(&osvi);
-			if (_tcscmp(osvi.szCSDVersion, _T("RTTarget-32")) == 0)
-				__os_notzero = 1;	/* On-Time */
-			else
+			//by glp 
+// 			osvi.dwOSVersionInfoSize = sizeof(OSVERSIONINFO);
+// 			GetVersionEx(&osvi);
+// 			if (_tcscmp(osvi.szCSDVersion, _T("RTTarget-32")) == 0)
+// 				__os_notzero = 1;	/* On-Time */
+// 			else
 				__os_notzero = 0;	/* Windows/NT */
 		} else
 			__os_notzero = 1;		/* Not Windows/NT */

@@ -10,6 +10,8 @@
 
 #include "db_int.h"
 
+#pragma comment(lib,"ws2_32.lib")
+
 /* Convert time-out from microseconds to milliseconds, rounding up. */
 #define	DB_TIMEOUT_TO_WINDOWS_TIMEOUT(t) (((t) + (US_PER_MS - 1)) / US_PER_MS)
 

@@ -109,6 +109,9 @@
     <Filter Include="src\dbinc">
       <UniqueIdentifier>{4ac76309-97f6-4489-ae50-93e4f6a5084e}</UniqueIdentifier>
     </Filter>
+    <Filter Include="src\crypto\mersenne">
+      <UniqueIdentifier>{e0d42957-4586-4114-b76d-9d7e1b263d97}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Text Include="ReadMe.txt" />
@@ -1345,6 +1348,12 @@
     </ClCompile>
     <ClCompile Include="..\..\..\src\berkeleydb\windows\dbkill.cpp">
       <Filter>src\windows</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\crypto\aes_method.c">
+      <Filter>src\crypto</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\berkeleydb\crypto\mersenne\mt19937db.c">
+      <Filter>src\crypto\mersenne</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
