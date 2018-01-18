@@ -154,8 +154,8 @@ template<int frombits, int tobits, bool pad, typename O, typename I>
 bool ConvertBits(O& out, I it, I end) {
     size_t acc = 0;
     size_t bits = 0;
-    constexpr size_t maxv = (1 << tobits) - 1;
-    constexpr size_t max_acc = (1 << (frombits + tobits - 1)) - 1;
+    /*constexpr*/ size_t maxv = (1 << tobits) - 1;
+    /*constexpr*/ size_t max_acc = (1 << (frombits + tobits - 1)) - 1;
     while (it != end) {
         acc = ((acc << frombits) | *it) & max_acc;
         bits += frombits;

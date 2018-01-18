@@ -37,7 +37,7 @@ static const unsigned int MAX_SIZE = 0x02000000;
  * is likely the only way to do so.
  */
 struct deserialize_type {};
-constexpr deserialize_type deserialize {};
+/*constexpr*/ deserialize_type deserialize {};
 
 /**
  * Used to bypass the rule against non-const reference to temporary
@@ -818,11 +818,11 @@ void Unserialize(Stream& is, std::shared_ptr<const T>& p)
  */
 struct CSerActionSerialize
 {
-    constexpr bool ForRead() const { return false; }
+    /*constexpr*/ bool ForRead() const { return false; }
 };
 struct CSerActionUnserialize
 {
-    constexpr bool ForRead() const { return true; }
+    /*constexpr*/ bool ForRead() const { return true; }
 };
 
 template<typename Stream, typename T>
