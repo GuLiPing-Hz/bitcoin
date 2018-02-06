@@ -171,6 +171,7 @@
     <ClCompile Include="..\..\..\src\rpc\rawtransaction.cpp" />
     <ClCompile Include="..\..\..\src\rpc\safemode.cpp" />
     <ClCompile Include="..\..\..\src\rpc\server.cpp" />
+    <ClCompile Include="..\..\..\src\rpc\util.cpp" />
     <ClCompile Include="..\..\..\src\scheduler.cpp" />
     <ClCompile Include="..\..\..\src\script\bitcoinconsensus.cpp" />
     <ClCompile Include="..\..\..\src\script\interpreter.cpp" />
@@ -210,6 +211,7 @@
     <ClCompile Include="..\..\..\src\test\bip32_tests.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
     </ClCompile>
+    <ClCompile Include="..\..\..\src\test\blockchain_tests.cpp" />
     <ClCompile Include="..\..\..\src\test\blockencodings_tests.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
     </ClCompile>
@@ -360,9 +362,6 @@
     <ClCompile Include="..\..\..\src\test\uint256_tests.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="..\..\..\src\test\univalue_tests.cpp">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
-    </ClCompile>
     <ClCompile Include="..\..\..\src\test\util_tests.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
     </ClCompile>
@@ -495,6 +494,7 @@
     <ClInclude Include="..\..\..\src\rpc\register.h" />
     <ClInclude Include="..\..\..\src\rpc\safemode.h" />
     <ClInclude Include="..\..\..\src\rpc\server.h" />
+    <ClInclude Include="..\..\..\src\rpc\util.h" />
     <ClInclude Include="..\..\..\src\scheduler.h" />
     <ClInclude Include="..\..\..\src\script\bitcoinconsensus.h" />
     <ClInclude Include="..\..\..\src\script\interpreter.h" />
