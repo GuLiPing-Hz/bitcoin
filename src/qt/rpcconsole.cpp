@@ -1,4 +1,4 @@
-// Copyright (c) 2011-2016 The Bitcoin Core developers
+// Copyright (c) 2011-2017 The Bitcoin Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -11,7 +11,6 @@
 
 #include <qt/bantablemodel.h>
 #include <qt/clientmodel.h>
-#include <qt/guiutil.h>
 #include <qt/platformstyle.h>
 #include <chainparams.h>
 #include <netbase.h>
@@ -35,7 +34,6 @@
 #include <QScrollBar>
 #include <QSettings>
 #include <QSignalMapper>
-#include <QThread>
 #include <QTime>
 #include <QTimer>
 #include <QStringList>

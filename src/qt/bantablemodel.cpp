@@ -1,4 +1,4 @@
-// Copyright (c) 2011-2016 The Bitcoin Core developers
+// Copyright (c) 2011-2017 The Bitcoin Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -55,11 +55,11 @@ public:
 #if QT_VERSION >= 0x040700
         cachedBanlist.reserve(banMap.size());
 #endif
-        for (banmap_t::iterator it = banMap.begin(); it != banMap.end(); it++)
+        for (const auto& entry : banMap)
         {
             CCombinedBan banEntry;
-            banEntry.subnet = (*it).first;
-            banEntry.banEntry = (*it).second;
+            banEntry.subnet = entry.first;
+            banEntry.banEntry = entry.second;
             cachedBanlist.append(banEntry);
         }
 
