@@ -138,35 +138,35 @@ class CBlockPolicyEstimator
 {
 private:
     /** Track confirm delays up to 12 blocks for short horizon */
-    static /*constexpr*/ unsigned int SHORT_BLOCK_PERIODS = 12;
-    static /*constexpr*/ unsigned int SHORT_SCALE = 1;
+    static constexpr unsigned int SHORT_BLOCK_PERIODS = 12;
+    static constexpr unsigned int SHORT_SCALE = 1;
     /** Track confirm delays up to 48 blocks for medium horizon */
-    static /*constexpr*/ unsigned int MED_BLOCK_PERIODS = 24;
-    static /*constexpr*/ unsigned int MED_SCALE = 2;
+    static constexpr unsigned int MED_BLOCK_PERIODS = 24;
+    static constexpr unsigned int MED_SCALE = 2;
     /** Track confirm delays up to 1008 blocks for long horizon */
-    static /*constexpr*/ unsigned int LONG_BLOCK_PERIODS = 42;
-    static /*constexpr*/ unsigned int LONG_SCALE = 24;
+    static constexpr unsigned int LONG_BLOCK_PERIODS = 42;
+    static constexpr unsigned int LONG_SCALE = 24;
     /** Historical estimates that are older than this aren't valid */
     static const unsigned int OLDEST_ESTIMATE_HISTORY = 6 * 1008;
 
     /** Decay of .962 is a half-life of 18 blocks or about 3 hours */
-    static /*constexpr*/ double SHORT_DECAY = .962;
+    static constexpr double SHORT_DECAY = .962;
     /** Decay of .998 is a half-life of 144 blocks or about 1 day */
-    static /*constexpr*/ double MED_DECAY = .9952;
+    static constexpr double MED_DECAY = .9952;
     /** Decay of .9995 is a half-life of 1008 blocks or about 1 week */
-    static /*constexpr*/ double LONG_DECAY = .99931;
+    static constexpr double LONG_DECAY = .99931;
 
     /** Require greater than 60% of X feerate transactions to be confirmed within Y/2 blocks*/
-    static /*constexpr*/ double HALF_SUCCESS_PCT = .6;
+    static constexpr double HALF_SUCCESS_PCT = .6;
     /** Require greater than 85% of X feerate transactions to be confirmed within Y blocks*/
-    static /*constexpr*/ double SUCCESS_PCT = .85;
+    static constexpr double SUCCESS_PCT = .85;
     /** Require greater than 95% of X feerate transactions to be confirmed within 2 * Y blocks*/
-    static /*constexpr*/ double DOUBLE_SUCCESS_PCT = .95;
+    static constexpr double DOUBLE_SUCCESS_PCT = .95;
 
     /** Require an avg of 0.1 tx in the combined feerate bucket per block to have stat significance */
-    static /*constexpr*/ double SUFFICIENT_FEETXS = 0.1;
+    static constexpr double SUFFICIENT_FEETXS = 0.1;
     /** Require an avg of 0.5 tx when using short decay since there are fewer blocks considered*/
-    static /*constexpr*/ double SUFFICIENT_TXS_SHORT = 0.5;
+    static constexpr double SUFFICIENT_TXS_SHORT = 0.5;
 
     /** Minimum and Maximum values for tracking feerates
      * The MIN_BUCKET_FEERATE should just be set to the lowest reasonable feerate we
@@ -175,15 +175,15 @@ private:
      * invalidates old estimates files. So leave it at 1000 unless it becomes
      * necessary to lower it, and then lower it substantially.
      */
-    static /*constexpr*/ double MIN_BUCKET_FEERATE = 1000;
-    static /*constexpr*/ double MAX_BUCKET_FEERATE = 1e7;
+    static constexpr double MIN_BUCKET_FEERATE = 1000;
+    static constexpr double MAX_BUCKET_FEERATE = 1e7;
 
     /** Spacing of FeeRate buckets
      * We have to lump transactions into buckets based on feerate, but we want to be able
      * to give accurate estimates over a large range of potential feerates
      * Therefore it makes sense to exponentially space the buckets
      */
-    static /*constexpr*/ double FEE_SPACING = 1.05;
+    static constexpr double FEE_SPACING = 1.05;
 
 public:
     /** Create new BlockPolicyEstimator and initialize stats tracking classes with default values */
@@ -275,12 +275,12 @@ private:
 class FeeFilterRounder
 {
 private:
-    static /*constexpr*/ double MAX_FILTER_FEERATE = 1e7;
+    static constexpr double MAX_FILTER_FEERATE = 1e7;
     /** FEE_FILTER_SPACING is just used to provide some quantization of fee
      * filter results.  Historically it reused FEE_SPACING, but it is completely
      * unrelated, and was made a separate constant so the two concepts are not
      * tied together */
-    static /*constexpr*/ double FEE_FILTER_SPACING = 1.1;
+    static constexpr double FEE_FILTER_SPACING = 1.1;
 
 public:
     /** Create new FeeFilterRounder */

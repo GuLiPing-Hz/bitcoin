@@ -253,8 +253,8 @@ private:
     }
 
     /* end
-     * @returns a /*constexpr*/ index that can never be inserted to */
-    /*constexpr*/ uint32_t invalid() const
+     * @returns a constexpr index that can never be inserted to */
+    constexpr uint32_t invalid() const
     {
         return ~(uint32_t)0;
     }

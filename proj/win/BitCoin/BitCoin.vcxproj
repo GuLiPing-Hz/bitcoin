@@ -52,7 +52,7 @@
       </PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
-      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_LIB;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_LIB;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;HAVE_WORKING_BOOST_SLEEP_FOR;HAVE_CONFIG_H;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <SDLCheck>true</SDLCheck>
       <AdditionalIncludeDirectories>$(SolutionDir)..\..\..\src\berkeleydb\windows;$(DEV_SDK_DIR)boost_1_66_0;$(SolutionDir)..;$(SolutionDir)..\..\..\src;$(SolutionDir)..\..\..\src\leveldb\include;$(SolutionDir)..\..\..\src\leveldb;$(SolutionDir)..\..\..\src\secp256k1\include;$(SolutionDir)..\..\..\src\univalue\include;$(DEV_SDK_DIR)boost_1_65_1;$(DEV_SDK_DIR)BerkeleyDB\include;$(DEV_SDK_DIR)Libevent;$(DEV_SDK_DIR)OpenSSL\include</AdditionalIncludeDirectories>
     </ClCompile>
@@ -85,7 +85,9 @@
     <ClCompile Include="..\..\..\src\arith_uint256.cpp" />
     <ClCompile Include="..\..\..\src\base58.cpp" />
     <ClCompile Include="..\..\..\src\bech32.cpp" />
-    <ClCompile Include="..\..\..\src\bench\base58.cpp" />
+    <ClCompile Include="..\..\..\src\bench\base58.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
     <ClCompile Include="..\..\..\src\bench\bench.cpp" />
     <ClCompile Include="..\..\..\src\bench\bench_bitcoin.cpp" />
     <ClCompile Include="..\..\..\src\bench\ccoins_caching.cpp" />
@@ -94,7 +96,9 @@
     <ClCompile Include="..\..\..\src\bench\coin_selection.cpp" />
     <ClCompile Include="..\..\..\src\bench\crypto_hash.cpp" />
     <ClCompile Include="..\..\..\src\bench\Examples.cpp" />
-    <ClCompile Include="..\..\..\src\bench\lockedpool.cpp" />
+    <ClCompile Include="..\..\..\src\bench\lockedpool.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
     <ClCompile Include="..\..\..\src\bench\mempool_eviction.cpp" />
     <ClCompile Include="..\..\..\src\bench\perf.cpp" />
     <ClCompile Include="..\..\..\src\bench\prevector_destructor.cpp" />
@@ -166,12 +170,18 @@
     <ClCompile Include="..\..\..\src\rpc\client.cpp" />
     <ClCompile Include="..\..\..\src\rpc\mining.cpp" />
     <ClCompile Include="..\..\..\src\rpc\misc.cpp" />
-    <ClCompile Include="..\..\..\src\rpc\net.cpp" />
-    <ClCompile Include="..\..\..\src\rpc\protocol.cpp" />
+    <ClCompile Include="..\..\..\src\rpc\net.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\rpc\protocol.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
     <ClCompile Include="..\..\..\src\rpc\rawtransaction.cpp" />
     <ClCompile Include="..\..\..\src\rpc\safemode.cpp" />
     <ClCompile Include="..\..\..\src\rpc\server.cpp" />
-    <ClCompile Include="..\..\..\src\rpc\util.cpp" />
+    <ClCompile Include="..\..\..\src\rpc\util.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
     <ClCompile Include="..\..\..\src\scheduler.cpp" />
     <ClCompile Include="..\..\..\src\script\bitcoinconsensus.cpp" />
     <ClCompile Include="..\..\..\src\script\interpreter.cpp" />
@@ -386,32 +396,16 @@
     <ClCompile Include="..\..\..\src\validation.cpp" />
     <ClCompile Include="..\..\..\src\validationinterface.cpp" />
     <ClCompile Include="..\..\..\src\versionbits.cpp" />
-    <ClCompile Include="..\..\..\src\wallet\crypter.cpp" />
-    <ClCompile Include="..\..\..\src\wallet\db.cpp" />
-    <ClCompile Include="..\..\..\src\wallet\feebumper.cpp" />
-    <ClCompile Include="..\..\..\src\wallet\fees.cpp" />
-    <ClCompile Include="..\..\..\src\wallet\init.cpp" />
-    <ClCompile Include="..\..\..\src\wallet\rpcdump.cpp" />
-    <ClCompile Include="..\..\..\src\wallet\rpcwallet.cpp" />
-    <ClCompile Include="..\..\..\src\wallet\test\accounting_tests.cpp">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
-    </ClCompile>
-    <ClCompile Include="..\..\..\src\wallet\test\crypto_tests.cpp">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
-    </ClCompile>
-    <ClCompile Include="..\..\..\src\wallet\test\wallet_tests.cpp">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
-    </ClCompile>
-    <ClCompile Include="..\..\..\src\wallet\test\wallet_test_fixture.cpp">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
-    </ClCompile>
-    <ClCompile Include="..\..\..\src\wallet\wallet.cpp" />
-    <ClCompile Include="..\..\..\src\wallet\walletdb.cpp" />
-    <ClCompile Include="..\..\..\src\wallet\walletutil.cpp" />
     <ClCompile Include="..\..\..\src\warnings.cpp" />
-    <ClCompile Include="..\..\..\src\zmq\zmqabstractnotifier.cpp" />
-    <ClCompile Include="..\..\..\src\zmq\zmqnotificationinterface.cpp" />
-    <ClCompile Include="..\..\..\src\zmq\zmqpublishnotifier.cpp" />
+    <ClCompile Include="..\..\..\src\zmq\zmqabstractnotifier.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\zmq\zmqnotificationinterface.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\zmq\zmqpublishnotifier.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\..\src\addrdb.h" />
@@ -437,6 +431,7 @@
     <ClInclude Include="..\..\..\src\compat\endian.h" />
     <ClInclude Include="..\..\..\src\compat\sanity.h" />
     <ClInclude Include="..\..\..\src\compressor.h" />
+    <ClInclude Include="..\..\..\src\config\bitcoin-config.h" />
     <ClInclude Include="..\..\..\src\consensus\consensus.h" />
     <ClInclude Include="..\..\..\src\consensus\merkle.h" />
     <ClInclude Include="..\..\..\src\consensus\params.h" />
@@ -539,17 +534,6 @@
     <ClInclude Include="..\..\..\src\validationinterface.h" />
     <ClInclude Include="..\..\..\src\version.h" />
     <ClInclude Include="..\..\..\src\versionbits.h" />
-    <ClInclude Include="..\..\..\src\wallet\coincontrol.h" />
-    <ClInclude Include="..\..\..\src\wallet\crypter.h" />
-    <ClInclude Include="..\..\..\src\wallet\db.h" />
-    <ClInclude Include="..\..\..\src\wallet\feebumper.h" />
-    <ClInclude Include="..\..\..\src\wallet\fees.h" />
-    <ClInclude Include="..\..\..\src\wallet\init.h" />
-    <ClInclude Include="..\..\..\src\wallet\rpcwallet.h" />
-    <ClInclude Include="..\..\..\src\wallet\test\wallet_test_fixture.h" />
-    <ClInclude Include="..\..\..\src\wallet\wallet.h" />
-    <ClInclude Include="..\..\..\src\wallet\walletdb.h" />
-    <ClInclude Include="..\..\..\src\wallet\walletutil.h" />
     <ClInclude Include="..\..\..\src\warnings.h" />
     <ClInclude Include="..\..\..\src\zmq\zmqabstractnotifier.h" />
     <ClInclude Include="..\..\..\src\zmq\zmqconfig.h" />

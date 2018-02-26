@@ -52,9 +52,6 @@
     <Filter Include="univalue">
       <UniqueIdentifier>{0b971d26-7f71-4af2-b74c-ee49fbdb496b}</UniqueIdentifier>
     </Filter>
-    <Filter Include="wallet">
-      <UniqueIdentifier>{4c7e11f6-7c0d-42e1-be6f-661e34046369}</UniqueIdentifier>
-    </Filter>
     <Filter Include="zmq">
       <UniqueIdentifier>{b7bddc14-cadd-456d-8401-1819dac06dde}</UniqueIdentifier>
     </Filter>
@@ -66,9 +63,6 @@
     </Filter>
     <Filter Include="support\allocators">
       <UniqueIdentifier>{e87a6a5c-742e-4e97-8fb1-3b5030c50b1a}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="wallet\test">
-      <UniqueIdentifier>{8cadcf69-0d07-4d2c-96da-cf01dc2853f3}</UniqueIdentifier>
     </Filter>
     <Filter Include="univalue\include">
       <UniqueIdentifier>{e7e089e1-7660-4d5a-87ac-f1bbd8fbc94d}</UniqueIdentifier>
@@ -435,48 +429,6 @@
     <ClCompile Include="..\..\..\src\test\arith_uint256_tests.cpp">
       <Filter>test</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\src\wallet\feebumper.cpp">
-      <Filter>wallet</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\src\wallet\fees.cpp">
-      <Filter>wallet</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\src\wallet\init.cpp">
-      <Filter>wallet</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\src\wallet\rpcdump.cpp">
-      <Filter>wallet</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\src\wallet\rpcwallet.cpp">
-      <Filter>wallet</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\src\wallet\wallet.cpp">
-      <Filter>wallet</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\src\wallet\walletdb.cpp">
-      <Filter>wallet</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\src\wallet\walletutil.cpp">
-      <Filter>wallet</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\src\wallet\crypter.cpp">
-      <Filter>wallet</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\src\wallet\db.cpp">
-      <Filter>wallet</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\src\wallet\test\wallet_tests.cpp">
-      <Filter>wallet\test</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\src\wallet\test\accounting_tests.cpp">
-      <Filter>wallet\test</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\src\wallet\test\crypto_tests.cpp">
-      <Filter>wallet\test</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\src\wallet\test\wallet_test_fixture.cpp">
-      <Filter>wallet\test</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\..\src\zmq\zmqnotificationinterface.cpp">
       <Filter>zmq</Filter>
     </ClCompile>
@@ -818,39 +770,6 @@
     <ClInclude Include="..\..\..\src\test\test_bitcoin.h">
       <Filter>test</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\src\wallet\feebumper.h">
-      <Filter>wallet</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\src\wallet\fees.h">
-      <Filter>wallet</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\src\wallet\init.h">
-      <Filter>wallet</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\src\wallet\rpcwallet.h">
-      <Filter>wallet</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\src\wallet\wallet.h">
-      <Filter>wallet</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\src\wallet\walletdb.h">
-      <Filter>wallet</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\src\wallet\walletutil.h">
-      <Filter>wallet</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\src\wallet\coincontrol.h">
-      <Filter>wallet</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\src\wallet\crypter.h">
-      <Filter>wallet</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\src\wallet\db.h">
-      <Filter>wallet</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\src\wallet\test\wallet_test_fixture.h">
-      <Filter>wallet\test</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\..\src\zmq\zmqnotificationinterface.h">
       <Filter>zmq</Filter>
     </ClInclude>
@@ -1084,6 +1003,9 @@
     </ClInclude>
     <ClInclude Include="..\..\..\src\rpc\util.h">
       <Filter>rpc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\config\bitcoin-config.h">
+      <Filter>config</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

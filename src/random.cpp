@@ -76,7 +76,7 @@ static inline int64_t GetPerformanceCounter()
 #if defined(__x86_64__) || defined(__amd64__) || defined(__i386__)
 static std::atomic<bool> hwrand_initialized{false};
 static bool rdrand_supported = false;
-static /*constexpr*/ uint32_t CPUID_F1_ECX_RDRAND = 0x40000000;
+static constexpr uint32_t CPUID_F1_ECX_RDRAND = 0x40000000;
 static void RDRandInit()
 {
     uint32_t eax, ebx, ecx, edx;
