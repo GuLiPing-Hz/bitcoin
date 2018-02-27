@@ -8,4 +8,6 @@
 #define CLIENT_VERSION_IS_RELEASE 1
 #define COPYRIGHT_YEAR 1
 
+#define COPYRIGHT_HOLDERS 1
+
 #endif
