@@ -96,10 +96,10 @@
     <ClInclude Include="..\..\..\src\crypto\sha1.h" />
     <ClInclude Include="..\..\..\src\crypto\sha256.h" />
     <ClInclude Include="..\..\..\src\crypto\sha512.h" />
-    <ClInclude Include="..\config.h" />
     <ClInclude Include="..\funcs.h" />
     <ClInclude Include="..\timec.h" />
     <ClInclude Include="..\timer.h" />
+    <ClInclude Include="..\wrap_config.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
   </ItemGroup>

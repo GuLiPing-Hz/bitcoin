@@ -48,9 +48,6 @@
     <ClInclude Include="..\timec.h">
       <Filter>win</Filter>
     </ClInclude>
-    <ClInclude Include="..\config.h">
-      <Filter>win</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\..\src\crypto\aes.h">
       <Filter>src\crypto</Filter>
     </ClInclude>
@@ -88,6 +85,9 @@
       <Filter>src\compact</Filter>
     </ClInclude>
     <ClInclude Include="..\timer.h">
+      <Filter>win</Filter>
+    </ClInclude>
+    <ClInclude Include="..\wrap_config.h">
       <Filter>win</Filter>
     </ClInclude>
   </ItemGroup>

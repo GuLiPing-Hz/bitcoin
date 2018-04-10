@@ -3,7 +3,7 @@
 
 #include "stdafx.h"
 #include "crypto/aes.h"
-#include "config.h"
+#include "wrap_config.h"
 #include "funcs.h"
 #include "compat/endian.h"
 #include "crypto/chacha20.h"
